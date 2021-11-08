@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentacionesAjedrez", "PresentacionesAjedrez\PresentacionesAjedrez.csproj", "{0F52F0F2-9BAF-410C-BC28-CB592BAE5EBD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesoDatos", "AccesoDatos\AccesoDatos.csproj", "{5992CE8F-A23A-4A6D-AD6F-7FA1C31EF94D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manejadores", "Manejadores\Manejadores.csproj", "{B49605EC-011D-420C-B4F3-DEA6C40730A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{0F52F0F2-9BAF-410C-BC28-CB592BAE5EBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F52F0F2-9BAF-410C-BC28-CB592BAE5EBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F52F0F2-9BAF-410C-BC28-CB592BAE5EBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5992CE8F-A23A-4A6D-AD6F-7FA1C31EF94D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5992CE8F-A23A-4A6D-AD6F-7FA1C31EF94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5992CE8F-A23A-4A6D-AD6F-7FA1C31EF94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5992CE8F-A23A-4A6D-AD6F-7FA1C31EF94D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B49605EC-011D-420C-B4F3-DEA6C40730A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B49605EC-011D-420C-B4F3-DEA6C40730A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B49605EC-011D-420C-B4F3-DEA6C40730A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B49605EC-011D-420C-B4F3-DEA6C40730A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
