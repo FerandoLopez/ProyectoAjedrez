@@ -16,5 +16,15 @@ namespace PresentacionesAjedrez
         {
             InitializeComponent();
         }
+
+        private void btnPais_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

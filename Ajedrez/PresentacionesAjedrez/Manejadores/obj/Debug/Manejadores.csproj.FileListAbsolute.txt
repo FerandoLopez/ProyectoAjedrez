@@ -28,3 +28,33 @@ C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\Pr
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\obj\Debug\Manejadores.csproj.CopyComplete
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\obj\Debug\Manejadores.dll
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\obj\Debug\Manejadores.pdb
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\Manejadores.dll
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\Manejadores.pdb
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\AccesoDatos.dll
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\MySql.Data.dll
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\Google.Protobuf.dll
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\ZstdNet.dll
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\BouncyCastle.Crypto.dll
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\Ubiety.Dns.Core.dll
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\System.Memory.dll
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\System.Buffers.dll
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\K4os.Compression.LZ4.dll
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\K4os.Hash.xxHash.dll
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\System.Numerics.Vectors.dll
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\AccesoDatos.pdb
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\AccesoDatos.dll.config
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\MySql.Data.xml
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\Google.Protobuf.pdb
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\Google.Protobuf.xml
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\System.Memory.xml
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\System.Buffers.xml
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\K4os.Compression.LZ4.xml
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\K4os.Hash.xxHash.xml
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\bin\Debug\System.Numerics.Vectors.xml
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\obj\Debug\Manejadores.csproj.AssemblyReference.cache
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\obj\Debug\Manejadores.csproj.CoreCompileInputs.cache
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\obj\Debug\Manejadores.csproj.CopyComplete
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\obj\Debug\Manejadores.dll
+C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Manejadores\obj\Debug\Manejadores.pdb
