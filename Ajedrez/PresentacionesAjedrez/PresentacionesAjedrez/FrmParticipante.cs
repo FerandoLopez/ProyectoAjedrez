@@ -16,5 +16,12 @@ namespace PresentacionesAjedrez
         {
             InitializeComponent();
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            FrmAddParticipante ape = new FrmAddParticipante();
+            ape.Dock = DockStyle.Fill;
+            ape.ShowDialog();
+        }
     }
 }

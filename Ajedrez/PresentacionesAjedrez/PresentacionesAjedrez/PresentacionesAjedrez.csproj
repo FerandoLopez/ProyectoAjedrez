@@ -46,11 +46,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAddColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddColor.Designer.cs">
+      <DependentUpon>FrmAddColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddHotel.Designer.cs">
+      <DependentUpon>FrmAddHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddMovimiento.Designer.cs">
+      <DependentUpon>FrmAddMovimiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAddPais.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAddPais.Designer.cs">
       <DependentUpon>FrmAddPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddParticipante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddParticipante.Designer.cs">
+      <DependentUpon>FrmAddParticipante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddPartida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddPartida.Designer.cs">
+      <DependentUpon>FrmAddPartida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddRegistro.Designer.cs">
+      <DependentUpon>FrmAddRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddSala.Designer.cs">
+      <DependentUpon>FrmAddSala.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmColor.cs">
       <SubType>Form</SubType>
@@ -121,8 +163,29 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmAddColor.resx">
+      <DependentUpon>FrmAddColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddHotel.resx">
+      <DependentUpon>FrmAddHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddMovimiento.resx">
+      <DependentUpon>FrmAddMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAddPais.resx">
       <DependentUpon>FrmAddPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddParticipante.resx">
+      <DependentUpon>FrmAddParticipante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddPartida.resx">
+      <DependentUpon>FrmAddPartida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddRegistro.resx">
+      <DependentUpon>FrmAddRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddSala.resx">
+      <DependentUpon>FrmAddSala.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmColor.resx">
       <DependentUpon>FrmColor.cs</DependentUpon>
