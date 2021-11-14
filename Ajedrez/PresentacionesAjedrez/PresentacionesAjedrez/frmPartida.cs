@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PresentacionesAjedrez
 {
-    public partial class frmPartida : Form
+    public partial class FrmPartida : Form
     {
-        public frmPartida()
+        public FrmPartida()
         {
             InitializeComponent();
         }

@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace PresentacionesAjedrez
 {
-    public partial class frmPais : Form
+    public partial class FrmPais : Form
     {
-        public frmPais()
+        public FrmPais()
         {
             InitializeComponent();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            FrmAddPais ap = new FrmAddPais();
+            ap.Dock = DockStyle.Fill;
+            ap.ShowDialog();
         }
     }
 }

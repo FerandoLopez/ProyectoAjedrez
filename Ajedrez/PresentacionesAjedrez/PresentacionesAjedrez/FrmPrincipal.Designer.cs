@@ -29,30 +29,20 @@ namespace PresentacionesAjedrez
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnPartida = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnMovimiento = new System.Windows.Forms.Button();
+            this.btnColor = new System.Windows.Forms.Button();
+            this.btnPartidas = new System.Windows.Forms.Button();
+            this.btnSalas = new System.Windows.Forms.Button();
+            this.btnRegistro = new System.Windows.Forms.Button();
             this.btnHotel = new System.Windows.Forms.Button();
-            this.btnUsuario = new System.Windows.Forms.Button();
+            this.btnParticipante = new System.Windows.Forms.Button();
             this.btnPais = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Controls.Add(this.btnPartida);
-            this.panel1.Controls.Add(this.btnHotel);
-            this.panel1.Controls.Add(this.btnUsuario);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnPais);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(381, 553);
-            this.panel1.TabIndex = 0;
             // 
             // label1
             // 
@@ -67,111 +57,208 @@ namespace PresentacionesAjedrez
             this.label1.TabIndex = 1;
             this.label1.Text = "Campeonato\r\nAjedrez";
             // 
-            // pictureBox1
+            // panel1
             // 
-            this.pictureBox1.Image = global::PresentacionesAjedrez.Properties.Resources.ajedrezin;
-            this.pictureBox1.Location = new System.Drawing.Point(376, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(405, 562);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.btnSalir);
+            this.panel1.Controls.Add(this.btnMovimiento);
+            this.panel1.Controls.Add(this.btnColor);
+            this.panel1.Controls.Add(this.btnPartidas);
+            this.panel1.Controls.Add(this.btnSalas);
+            this.panel1.Controls.Add(this.btnRegistro);
+            this.panel1.Controls.Add(this.btnHotel);
+            this.panel1.Controls.Add(this.btnParticipante);
+            this.panel1.Controls.Add(this.btnPais);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(291, 895);
+            this.panel1.TabIndex = 0;
             // 
-            // btnPartida
+            // btnSalir
             // 
-            this.btnPartida.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPartida.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPartida.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPartida.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnPartida.Image = global::PresentacionesAjedrez.Properties.Resources.PartidaAjedrez_ConvertImage;
-            this.btnPartida.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPartida.Location = new System.Drawing.Point(16, 431);
-            this.btnPartida.Margin = new System.Windows.Forms.Padding(4);
-            this.btnPartida.Name = "btnPartida";
-            this.btnPartida.Size = new System.Drawing.Size(330, 108);
-            this.btnPartida.TabIndex = 4;
-            this.btnPartida.Text = "Partida";
-            this.btnPartida.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPartida.UseVisualStyleBackColor = false;
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.White;
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalir.Location = new System.Drawing.Point(3, 812);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(284, 84);
+            this.btnSalir.TabIndex = 14;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnMovimiento
+            // 
+            this.btnMovimiento.FlatAppearance.BorderSize = 0;
+            this.btnMovimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMovimiento.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMovimiento.ForeColor = System.Drawing.Color.White;
+            this.btnMovimiento.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_move_32px;
+            this.btnMovimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMovimiento.Location = new System.Drawing.Point(0, 728);
+            this.btnMovimiento.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMovimiento.Name = "btnMovimiento";
+            this.btnMovimiento.Size = new System.Drawing.Size(284, 84);
+            this.btnMovimiento.TabIndex = 13;
+            this.btnMovimiento.Text = "Movimiento";
+            this.btnMovimiento.UseVisualStyleBackColor = true;
+            this.btnMovimiento.Click += new System.EventHandler(this.btnMovimiento_Click);
+            // 
+            // btnColor
+            // 
+            this.btnColor.FlatAppearance.BorderSize = 0;
+            this.btnColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnColor.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnColor.ForeColor = System.Drawing.Color.White;
+            this.btnColor.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_color_wheel_80px;
+            this.btnColor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnColor.Location = new System.Drawing.Point(0, 637);
+            this.btnColor.Margin = new System.Windows.Forms.Padding(4);
+            this.btnColor.Name = "btnColor";
+            this.btnColor.Size = new System.Drawing.Size(284, 84);
+            this.btnColor.TabIndex = 12;
+            this.btnColor.Text = "Color";
+            this.btnColor.UseVisualStyleBackColor = true;
+            this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
+            // 
+            // btnPartidas
+            // 
+            this.btnPartidas.FlatAppearance.BorderSize = 0;
+            this.btnPartidas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPartidas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPartidas.ForeColor = System.Drawing.Color.White;
+            this.btnPartidas.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_head_to_head_48px;
+            this.btnPartidas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPartidas.Location = new System.Drawing.Point(0, 559);
+            this.btnPartidas.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPartidas.Name = "btnPartidas";
+            this.btnPartidas.Size = new System.Drawing.Size(284, 84);
+            this.btnPartidas.TabIndex = 11;
+            this.btnPartidas.Text = "Partidas";
+            this.btnPartidas.UseVisualStyleBackColor = true;
+            this.btnPartidas.Click += new System.EventHandler(this.btnPartidas_Click);
+            // 
+            // btnSalas
+            // 
+            this.btnSalas.FlatAppearance.BorderSize = 0;
+            this.btnSalas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalas.ForeColor = System.Drawing.Color.White;
+            this.btnSalas.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_room_64px;
+            this.btnSalas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalas.Location = new System.Drawing.Point(0, 468);
+            this.btnSalas.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalas.Name = "btnSalas";
+            this.btnSalas.Size = new System.Drawing.Size(284, 84);
+            this.btnSalas.TabIndex = 10;
+            this.btnSalas.Text = "Salas";
+            this.btnSalas.UseVisualStyleBackColor = true;
+            this.btnSalas.Click += new System.EventHandler(this.btnSalas_Click);
+            // 
+            // btnRegistro
+            // 
+            this.btnRegistro.FlatAppearance.BorderSize = 0;
+            this.btnRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistro.ForeColor = System.Drawing.Color.White;
+            this.btnRegistro.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_note_64px;
+            this.btnRegistro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegistro.Location = new System.Drawing.Point(0, 377);
+            this.btnRegistro.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegistro.Name = "btnRegistro";
+            this.btnRegistro.Size = new System.Drawing.Size(284, 84);
+            this.btnRegistro.TabIndex = 9;
+            this.btnRegistro.Text = "Registro";
+            this.btnRegistro.UseVisualStyleBackColor = true;
+            this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
             // 
             // btnHotel
             // 
-            this.btnHotel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnHotel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnHotel.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHotel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnHotel.Image = global::PresentacionesAjedrez.Properties.Resources.HotelAjedrez_ConvertImage;
+            this.btnHotel.FlatAppearance.BorderSize = 0;
+            this.btnHotel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHotel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHotel.ForeColor = System.Drawing.Color.White;
+            this.btnHotel.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_hotel_96px;
             this.btnHotel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHotel.Location = new System.Drawing.Point(16, 315);
+            this.btnHotel.Location = new System.Drawing.Point(0, 286);
             this.btnHotel.Margin = new System.Windows.Forms.Padding(4);
             this.btnHotel.Name = "btnHotel";
-            this.btnHotel.Size = new System.Drawing.Size(330, 108);
-            this.btnHotel.TabIndex = 3;
+            this.btnHotel.Size = new System.Drawing.Size(284, 84);
+            this.btnHotel.TabIndex = 8;
             this.btnHotel.Text = "Hotel";
-            this.btnHotel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHotel.UseVisualStyleBackColor = false;
+            this.btnHotel.UseVisualStyleBackColor = true;
+            this.btnHotel.Click += new System.EventHandler(this.btnHotel_Click);
             // 
-            // btnUsuario
+            // btnParticipante
             // 
-            this.btnUsuario.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnUsuario.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnUsuario.Image = global::PresentacionesAjedrez.Properties.Resources.UsuarioAjedrez_ConvertImage;
-            this.btnUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuario.Location = new System.Drawing.Point(16, 199);
-            this.btnUsuario.Margin = new System.Windows.Forms.Padding(4);
-            this.btnUsuario.Name = "btnUsuario";
-            this.btnUsuario.Size = new System.Drawing.Size(330, 108);
-            this.btnUsuario.TabIndex = 2;
-            this.btnUsuario.Text = "Usuario";
-            this.btnUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUsuario.UseVisualStyleBackColor = false;
-            this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
+            this.btnParticipante.FlatAppearance.BorderSize = 0;
+            this.btnParticipante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnParticipante.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnParticipante.ForeColor = System.Drawing.Color.White;
+            this.btnParticipante.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_users_48px;
+            this.btnParticipante.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnParticipante.Location = new System.Drawing.Point(0, 195);
+            this.btnParticipante.Margin = new System.Windows.Forms.Padding(4);
+            this.btnParticipante.Name = "btnParticipante";
+            this.btnParticipante.Size = new System.Drawing.Size(284, 84);
+            this.btnParticipante.TabIndex = 7;
+            this.btnParticipante.Text = "Participante";
+            this.btnParticipante.UseVisualStyleBackColor = true;
+            this.btnParticipante.Click += new System.EventHandler(this.btnParticipante_Click);
             // 
             // btnPais
             // 
-            this.btnPais.BackColor = System.Drawing.SystemColors.Desktop;
-            this.btnPais.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPais.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPais.FlatAppearance.BorderSize = 0;
+            this.btnPais.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPais.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPais.ForeColor = System.Drawing.Color.White;
-            this.btnPais.Image = global::PresentacionesAjedrez.Properties.Resources.PaisAjedrez_ConvertImage;
+            this.btnPais.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_country_80px;
             this.btnPais.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPais.Location = new System.Drawing.Point(16, 84);
+            this.btnPais.Location = new System.Drawing.Point(0, 104);
             this.btnPais.Margin = new System.Windows.Forms.Padding(4);
             this.btnPais.Name = "btnPais";
-            this.btnPais.Size = new System.Drawing.Size(330, 108);
-            this.btnPais.TabIndex = 0;
+            this.btnPais.Size = new System.Drawing.Size(284, 84);
+            this.btnPais.TabIndex = 6;
             this.btnPais.Text = "Pais";
-            this.btnPais.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPais.UseVisualStyleBackColor = false;
-            this.btnPais.Click += new System.EventHandler(this.btnPais_Click);
+            this.btnPais.UseVisualStyleBackColor = true;
+            this.btnPais.Click += new System.EventHandler(this.btnPais_Click_1);
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(783, 554);
-            this.Controls.Add(this.pictureBox1);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1132, 895);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnPais;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnPartida;
+        private System.Windows.Forms.Button btnPais;
+        private System.Windows.Forms.Button btnParticipante;
         private System.Windows.Forms.Button btnHotel;
-        private System.Windows.Forms.Button btnUsuario;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnRegistro;
+        private System.Windows.Forms.Button btnSalas;
+        private System.Windows.Forms.Button btnPartidas;
+        private System.Windows.Forms.Button btnColor;
+        private System.Windows.Forms.Button btnMovimiento;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Panel panel1;
     }
 }

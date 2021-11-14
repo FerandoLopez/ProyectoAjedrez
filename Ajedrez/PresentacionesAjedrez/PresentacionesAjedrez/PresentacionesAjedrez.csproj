@@ -46,29 +46,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmHotel.cs">
+    <Compile Include="FrmAddPais.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmHotel.Designer.cs">
-      <DependentUpon>frmHotel.cs</DependentUpon>
+    <Compile Include="FrmAddPais.Designer.cs">
+      <DependentUpon>FrmAddPais.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPais.cs">
+    <Compile Include="FrmColor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPais.Designer.cs">
-      <DependentUpon>frmPais.cs</DependentUpon>
+    <Compile Include="FrmColor.Designer.cs">
+      <DependentUpon>FrmColor.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPartida.cs">
+    <Compile Include="FrmHotel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPartida.Designer.cs">
-      <DependentUpon>frmPartida.cs</DependentUpon>
+    <Compile Include="FrmHotel.Designer.cs">
+      <DependentUpon>FrmHotel.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUsuario.cs">
+    <Compile Include="FrmMovimiento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmUsuario.Designer.cs">
-      <DependentUpon>frmUsuario.cs</DependentUpon>
+    <Compile Include="FrmMovimiento.Designer.cs">
+      <DependentUpon>FrmMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPais.Designer.cs">
+      <DependentUpon>FrmPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParticipante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmParticipante.Designer.cs">
+      <DependentUpon>FrmParticipante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPartida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPartida.Designer.cs">
+      <DependentUpon>FrmPartida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistro.Designer.cs">
+      <DependentUpon>FrmRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSala.Designer.cs">
+      <DependentUpon>FrmSala.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="FrmLogin.cs">
@@ -91,23 +121,38 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmHotel.resx">
-      <DependentUpon>frmHotel.cs</DependentUpon>
+    <EmbeddedResource Include="FrmAddPais.resx">
+      <DependentUpon>FrmAddPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmColor.resx">
+      <DependentUpon>FrmColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHotel.resx">
+      <DependentUpon>FrmHotel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPais.resx">
-      <DependentUpon>frmPais.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMovimiento.resx">
+      <DependentUpon>FrmMovimiento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPartida.resx">
-      <DependentUpon>frmPartida.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPais.resx">
+      <DependentUpon>FrmPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParticipante.resx">
+      <DependentUpon>FrmParticipante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPartida.resx">
+      <DependentUpon>FrmPartida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUsuario.resx">
-      <DependentUpon>frmUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="FrmRegistro.resx">
+      <DependentUpon>FrmRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSala.resx">
+      <DependentUpon>FrmSala.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -163,10 +208,223 @@
     <None Include="Resources\Regresar.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-save-close-64.png" />
+    <None Include="Resources\icons8_color_wheel_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_country_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_head_to_head_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_hotel_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_move_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_note_128px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_room_128px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_users_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_move_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_note_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_room_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_users_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black_and_White_Chess_Pattern_generated.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospedaje.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_account_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_tag_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_classroom_128px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_client_management_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_dining_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_exit_64px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_exit_64px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_exit_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_graduate_128px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_key_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_key_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_meal_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_meal_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_meal_96px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_order_history_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_purchase_order_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_purchase_order_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_purchase_order_128px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_restaurant_menu_64px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_restaurant_menu_64px_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_tags_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_tags_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_tags_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_tags_96px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_team_160px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_user_80px_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-accede-redondeado-derecho-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add_property.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-america-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-buscar-cliente-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-chessboard-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-chess-clock-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-contactos-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete_property.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-bin-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit_property.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-enter-64.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-hotel-building-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hotel-star-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-knight-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-meeting-room-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-new-window-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-player-male-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-referee-48 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-room-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-as-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-close-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-more-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-more-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-trash-can-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-group-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuario-masculino-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_96px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

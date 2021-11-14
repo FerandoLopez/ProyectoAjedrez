@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace PresentacionesAjedrez
 {
-    public partial class frmUsuario : Form
+    public partial class FrmColor : Form
     {
-        public frmUsuario()
+        public FrmColor()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
