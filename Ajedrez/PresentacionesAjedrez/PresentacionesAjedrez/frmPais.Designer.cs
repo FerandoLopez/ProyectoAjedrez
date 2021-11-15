@@ -29,7 +29,7 @@ namespace PresentacionesAjedrez
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,6 +56,7 @@ namespace PresentacionesAjedrez
             this.btnEliminar.TabIndex = 23;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnAgregar
             // 
@@ -90,14 +91,14 @@ namespace PresentacionesAjedrez
             // 
             this.dtgPaises.AllowUserToAddRows = false;
             this.dtgPaises.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgPaises.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgPaises.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgPaises.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgPaises.Location = new System.Drawing.Point(39, 315);
             this.dtgPaises.Margin = new System.Windows.Forms.Padding(4);
@@ -106,6 +107,8 @@ namespace PresentacionesAjedrez
             this.dtgPaises.RowHeadersWidth = 51;
             this.dtgPaises.Size = new System.Drawing.Size(769, 316);
             this.dtgPaises.TabIndex = 26;
+            this.dtgPaises.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgPaises_CellDoubleClick);
+            this.dtgPaises.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgPaises_CellEnter);
             // 
             // txtBuscarPaises
             // 
@@ -115,6 +118,7 @@ namespace PresentacionesAjedrez
             this.txtBuscarPaises.Name = "txtBuscarPaises";
             this.txtBuscarPaises.Size = new System.Drawing.Size(691, 34);
             this.txtBuscarPaises.TabIndex = 21;
+            this.txtBuscarPaises.TextChanged += new System.EventHandler(this.txtBuscarPaises_TextChanged);
             // 
             // panel1
             // 
@@ -153,6 +157,7 @@ namespace PresentacionesAjedrez
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmPais";
             this.Text = "frmPais";
+            this.Load += new System.EventHandler(this.FrmPais_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgPaises)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

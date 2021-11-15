@@ -226,6 +226,10 @@
     <None Include="Resources\chess.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{f068629e-57d6-4c5c-987c-9930f75e2f88}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Manejadores\Manejadores.csproj">
       <Project>{b49605ec-011d-420c-b4f3-dea6c40730a9}</Project>
       <Name>Manejadores</Name>

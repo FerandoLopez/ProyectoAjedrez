@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using Entidades;
 
 namespace AccesoDatos
 {
@@ -63,6 +64,153 @@ namespace AccesoDatos
             con.Close();
             return valor;
         }
-    }
 
+        public List<ComboPais> LlenarPais(string consulta)
+        {
+            List<ComboPais> lista = new List<ComboPais>();
+
+            try
+            {
+                con.Open();
+                var command = new MySqlCommand(consulta, con);
+                var reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        ComboPais cp = new ComboPais();
+                        cp._IdPais = int.Parse(reader["idpais"].ToString());
+                        cp._Nombre = reader["nombre"].ToString();
+                        lista.Add(cp);
+                    }
+                }
+                con.Close();
+                return lista;
+            }
+            catch (Exception)
+            {
+                con.Close();
+                return lista;
+            }
+        }
+
+        public List<ComboRol> LlenarRol(string consulta)
+        {
+            List<ComboRol> lista = new List<ComboRol>();
+
+            try
+            {
+                con.Open();
+                var command = new MySqlCommand(consulta, con);
+                var reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        ComboRol cr = new ComboRol();
+                        cr._Rol = reader["rol"].ToString();
+                        lista.Add(cr);
+                    }
+                }
+                con.Close();
+                return lista;
+            }
+            catch (Exception)
+            {
+                con.Close();
+                return lista;
+            }
+        }
+
+        public List<ComboColor> LlenarColor(string consulta)
+        {
+            List<ComboColor> lista = new List<ComboColor>();
+
+            try
+            {
+                con.Open();
+                var command = new MySqlCommand(consulta, con);
+                var reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        ComboColor cc = new ComboColor();
+                        cc._Color = reader["color"].ToString();
+                        lista.Add(cc);
+                    }
+                }
+                con.Close();
+                return lista;
+            }
+            catch (Exception)
+            {
+                con.Close();
+                return lista;
+            }
+        }
+
+
+
+
+        public List<ComboParticipante> LlenarParticipante(string consulta)
+        {
+            List<ComboParticipante> lista = new List<ComboParticipante>();
+
+            try
+            {
+                con.Open();
+                var command = new MySqlCommand(consulta, con);
+                var reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        ComboParticipante cp = new ComboParticipante();
+                        cp._IdParticipante = int.Parse(reader["idparticipante"].ToString());
+                        cp._Nombre = reader["nombre"].ToString();
+                        lista.Add(cp);
+                    }
+                }
+                con.Close();
+                return lista;
+            }
+            catch (Exception)
+            {
+                con.Close();
+                return lista;
+            }
+        }
+
+
+        public List<ComboHotel> LlenarHotel(string consulta)
+        {
+            List<ComboHotel> lista = new List<ComboHotel>();
+
+            try
+            {
+                con.Open();
+                var command = new MySqlCommand(consulta, con);
+                var reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        ComboHotel ch = new ComboHotel();
+                        ch._IdHotel = int.Parse(reader["idhotel"].ToString());
+                        ch._Nombre = reader["nombre"].ToString();
+                        lista.Add(ch);
+                    }
+                }
+                con.Close();
+                return lista;
+            }
+            catch (Exception)
+            {
+                con.Close();
+                return lista;
+            }
+        }
+
+    }
 }

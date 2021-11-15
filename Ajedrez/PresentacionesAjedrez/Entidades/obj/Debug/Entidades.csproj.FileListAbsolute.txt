@@ -1,0 +1,6 @@
+C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Entidades\bin\Debug\Entidades.dll
+C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Entidades\obj\Debug\Entidades.dll
+C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
