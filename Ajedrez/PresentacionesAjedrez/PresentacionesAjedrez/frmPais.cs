@@ -34,9 +34,8 @@ namespace PresentacionesAjedrez
             p._IdPais = 0;
             p._Nombre = "";
             p._NoClubes = 0;
-            p._FkIdPais = 0;
             FrmAddPais ap = new FrmAddPais();
-            ap.Dock = DockStyle.Fill;
+           // ap.Dock = DockStyle.Fill;
             ap.ShowDialog();
             Actualizar();
         }
@@ -47,7 +46,6 @@ namespace PresentacionesAjedrez
             p._IdPais = int.Parse(dtgPaises.Rows[i].Cells[0].Value.ToString());
             p._Nombre = dtgPaises.Rows[i].Cells[1].Value.ToString();
             p._NoClubes = int.Parse(dtgPaises.Rows[i].Cells[2].Value.ToString());
-            //p._FkIdPais = int.Parse(dtgPaises.Rows[i].Cells[3].Value.ToString());
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -83,7 +81,11 @@ namespace PresentacionesAjedrez
         private void FrmPais_Load(object sender, EventArgs e)
         {
             Actualizar();
-            this.dtgPaises.Columns["FkIdPais"].Visible = false;
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

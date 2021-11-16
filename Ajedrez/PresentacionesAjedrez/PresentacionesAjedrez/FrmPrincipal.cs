@@ -53,7 +53,7 @@ namespace PresentacionesAjedrez
 
         private void btnRegistro_Click(object sender, EventArgs e)
         {
-            FrmRegistro r = new FrmRegistro();
+            FrmAlojamiento r = new FrmAlojamiento();
             r.MdiParent = this;
             r.Dock = DockStyle.Fill;
             r.Show();
@@ -69,15 +69,15 @@ namespace PresentacionesAjedrez
 
         private void btnPartidas_Click(object sender, EventArgs e)
         {
-            FrmPartida pr = new FrmPartida();
-            pr.MdiParent = this;
-            pr.Dock = DockStyle.Fill;
-            pr.Show();
+           FrmPartida pr = new FrmPartida();
+           pr.MdiParent = this;
+           pr.Dock = DockStyle.Fill;
+           pr.Show();
         }
 
         private void btnColor_Click(object sender, EventArgs e)
         {
-            FrmColor c = new FrmColor();
+            FrmRepresenta c = new FrmRepresenta();
             c.MdiParent = this;
             c.Dock = DockStyle.Fill;
             c.Show();
@@ -94,6 +94,22 @@ namespace PresentacionesAjedrez
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnJugador_Click(object sender, EventArgs e)
+        {
+            FrmJugador j = new FrmJugador();
+            j.MdiParent = this;
+            j.Dock = DockStyle.Fill;
+            j.Show();
+        }
+
+        private void btnArbitro_Click(object sender, EventArgs e)
+        {
+            FrmArbitro a = new FrmArbitro();
+            a.MdiParent = this;
+            a.Dock = DockStyle.Fill;
+            a.Show();
         }
     }
 }

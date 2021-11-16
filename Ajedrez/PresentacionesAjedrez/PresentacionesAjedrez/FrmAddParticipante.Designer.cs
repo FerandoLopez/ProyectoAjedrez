@@ -40,20 +40,16 @@ namespace PresentacionesAjedrez
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.txtCampeonato = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cbPais = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.cbRol = new System.Windows.Forms.ComboBox();
-            this.cbColor = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTelefono
             // 
             this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(223, 222);
+            this.txtTelefono.Location = new System.Drawing.Point(223, 290);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(269, 30);
@@ -64,7 +60,7 @@ namespace PresentacionesAjedrez
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(47, 222);
+            this.label4.Location = new System.Drawing.Point(47, 290);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(118, 29);
             this.label4.TabIndex = 34;
@@ -138,7 +134,7 @@ namespace PresentacionesAjedrez
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
             this.btnCancelar.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_cancel_2;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(357, 511);
+            this.btnCancelar.Location = new System.Drawing.Point(357, 425);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(135, 47);
@@ -154,7 +150,7 @@ namespace PresentacionesAjedrez
             this.btnGuardar.ForeColor = System.Drawing.Color.Black;
             this.btnGuardar.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_save_close;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(209, 511);
+            this.btnGuardar.Location = new System.Drawing.Point(209, 425);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(137, 47);
@@ -168,27 +164,16 @@ namespace PresentacionesAjedrez
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(47, 278);
+            this.label5.Location = new System.Drawing.Point(47, 235);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(161, 29);
             this.label5.TabIndex = 36;
             this.label5.Text = "Campeonato";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(47, 335);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 29);
-            this.label6.TabIndex = 37;
-            this.label6.Text = "Rol";
-            // 
             // txtCampeonato
             // 
             this.txtCampeonato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCampeonato.Location = new System.Drawing.Point(223, 277);
+            this.txtCampeonato.Location = new System.Drawing.Point(223, 234);
             this.txtCampeonato.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCampeonato.Name = "txtCampeonato";
             this.txtCampeonato.Size = new System.Drawing.Size(269, 30);
@@ -199,7 +184,7 @@ namespace PresentacionesAjedrez
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(47, 439);
+            this.label7.Location = new System.Drawing.Point(47, 353);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 29);
             this.label7.TabIndex = 40;
@@ -209,55 +194,20 @@ namespace PresentacionesAjedrez
             // 
             this.cbPais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPais.FormattingEnabled = true;
-            this.cbPais.Location = new System.Drawing.Point(223, 439);
-            this.cbPais.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbPais.Location = new System.Drawing.Point(223, 353);
+            this.cbPais.Margin = new System.Windows.Forms.Padding(4);
             this.cbPais.Name = "cbPais";
             this.cbPais.Size = new System.Drawing.Size(269, 33);
             this.cbPais.TabIndex = 42;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(47, 389);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 29);
-            this.label8.TabIndex = 43;
-            this.label8.Text = "Color";
-            // 
-            // cbRol
-            // 
-            this.cbRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRol.FormattingEnabled = true;
-            this.cbRol.Location = new System.Drawing.Point(223, 335);
-            this.cbRol.Margin = new System.Windows.Forms.Padding(4);
-            this.cbRol.Name = "cbRol";
-            this.cbRol.Size = new System.Drawing.Size(269, 33);
-            this.cbRol.TabIndex = 44;
-            // 
-            // cbColor
-            // 
-            this.cbColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbColor.FormattingEnabled = true;
-            this.cbColor.Location = new System.Drawing.Point(223, 389);
-            this.cbColor.Margin = new System.Windows.Forms.Padding(4);
-            this.cbColor.Name = "cbColor";
-            this.cbColor.Size = new System.Drawing.Size(269, 33);
-            this.cbColor.TabIndex = 45;
             // 
             // FrmAddParticipante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(521, 590);
-            this.Controls.Add(this.cbColor);
-            this.Controls.Add(this.cbRol);
-            this.Controls.Add(this.label8);
+            this.ClientSize = new System.Drawing.Size(521, 507);
             this.Controls.Add(this.cbPais);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtCampeonato);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.label4);
@@ -270,7 +220,7 @@ namespace PresentacionesAjedrez
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAddParticipante";
             this.Text = "FrmAddParticipante";
             this.Load += new System.EventHandler(this.FrmAddParticipante_Load);
@@ -293,12 +243,8 @@ namespace PresentacionesAjedrez
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtCampeonato;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbPais;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox cbRol;
-        private System.Windows.Forms.ComboBox cbColor;
     }
 }

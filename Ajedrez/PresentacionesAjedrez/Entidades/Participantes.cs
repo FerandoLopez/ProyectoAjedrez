@@ -11,26 +11,21 @@ namespace Entidades
         public int _IdParticipante { get; set; }
         public string _Nombre { get; set; }
         public string _Direccion { get; set; }
-        public string _Telefono { get; set; }
         public string _Campeonato { get; set; }
-        public string _Rol { get; set; }
-
-        public string _Color { get; set; }
+        public string _Telefono { get; set; }
         public int _FkIdPais { get; set; }
         public Participantes()
         {
 
         }
 
-        public Participantes(int idParticipante, string nombre, string direccion, string telefono, string campeonato, string rol, string color, int fkIdPais)
+        public Participantes(int idParticipante, string nombre, string direccion, string campeonato, string telefono, int fkIdPais)
         {
             _IdParticipante = idParticipante;
             _Nombre = nombre;
             _Direccion = direccion;
-            _Telefono = telefono;
             _Campeonato = campeonato;
-            _Rol = rol;
-            _Color = color;
+            _Telefono = telefono;
             _FkIdPais = fkIdPais;
         }
     }

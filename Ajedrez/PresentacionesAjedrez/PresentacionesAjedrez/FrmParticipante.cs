@@ -33,9 +33,8 @@ namespace PresentacionesAjedrez
             p._IdParticipante = 0;
             p._Nombre = "";
             p._Direccion = "";
-            p._Telefono = "";
             p._Campeonato = "";
-            p._Rol = "";
+            p._Telefono = "";
             p._FkIdPais = 0;
             FrmAddParticipante ape = new FrmAddParticipante();
             ape.Dock = DockStyle.Fill;
@@ -49,11 +48,9 @@ namespace PresentacionesAjedrez
             p._IdParticipante = int.Parse(dtgParticipantes.Rows[i].Cells[0].Value.ToString());
             p._Nombre = dtgParticipantes.Rows[i].Cells[1].Value.ToString();
             p._Direccion = dtgParticipantes.Rows[i].Cells[2].Value.ToString();
-            p._Telefono = dtgParticipantes.Rows[i].Cells[3].Value.ToString();
-            p._Campeonato = dtgParticipantes.Rows[i].Cells[4].Value.ToString();
-            p._Rol = dtgParticipantes.Rows[i].Cells[5].Value.ToString();
-            p._Color = dtgParticipantes.Rows[i].Cells[6].Value.ToString();
-            p._FkIdPais = int.Parse(dtgParticipantes.Rows[i].Cells[7].Value.ToString());
+            p._Campeonato = dtgParticipantes.Rows[i].Cells[3].Value.ToString();
+            p._Telefono = dtgParticipantes.Rows[i].Cells[4].Value.ToString();
+            p._FkIdPais = int.Parse(dtgParticipantes.Rows[i].Cells[5].Value.ToString());
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -89,7 +86,12 @@ namespace PresentacionesAjedrez
         private void FrmParticipante_Load(object sender, EventArgs e)
         {
             Actualizar();
-            this.dtgParticipantes.Columns["IdParticipante"].Visible = false;
+            //this.dtgParticipantes.Columns["IdParticipante"].Visible = false;
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

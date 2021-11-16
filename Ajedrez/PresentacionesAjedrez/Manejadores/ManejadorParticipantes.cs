@@ -14,8 +14,8 @@ namespace Manejadores
         Conexion c = new Conexion("localhost", "ajedrez", "ajedrez", "ajedrez");
         public string Guardar(Participantes participante)
         {
-            return c.Comando(string.Format("call p_insertarparticipante(null,'{0}','{1}','{2}','{3}','{4}','{5}','{6}')", 
-                participante._Nombre,participante._Direccion,participante._Telefono,participante._Campeonato,participante._Rol,participante._Color,participante._FkIdPais));
+            return c.Comando(string.Format("call p_insertarparticipante(null,'{0}','{1}','{2}','{3}','{4}')", 
+                participante._Nombre,participante._Direccion,participante._Campeonato, participante._Telefono,participante._FkIdPais));
         }
 
         public void Mostrar(DataGridView tabla, string dato)
@@ -26,8 +26,8 @@ namespace Manejadores
 
         public string Modificar(Participantes participante)
         {
-            return c.Comando(string.Format("call p_modificarparticipante('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')",
-                participante._IdParticipante,participante._Nombre, participante._Direccion, participante._Telefono, participante._Campeonato, participante._Rol, participante._Color, participante._FkIdPais));
+            return c.Comando(string.Format("call p_modificarparticipante('{0}','{1}','{2}','{3}','{4}','{5}')",
+                participante._IdParticipante,participante._Nombre, participante._Direccion,  participante._Campeonato, participante._Telefono,participante._FkIdPais));
         }
 
         public string Eliminar(Participantes participante)
@@ -44,16 +44,6 @@ namespace Manejadores
         public List<ComboPais> LlenarPais()
         {
             return c.LlenarPais("select idpais, nombre from pais");
-        }
-
-        public List<ComboRol> LlenarRol()
-        {
-            return c.LlenarRol("select rol from rol");
-        }
-
-        public List<ComboColor> LlenarColor()
-        {
-            return c.LlenarColor("select color from color");
         }
     }
 }

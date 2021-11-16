@@ -42,11 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManejadorAlojamiento.cs" />
+    <Compile Include="ManejadorArbitro.cs" />
     <Compile Include="ManejadorHotel.cs" />
+    <Compile Include="ManejadorJugador.cs" />
     <Compile Include="ManejadorLogin.cs" />
+    <Compile Include="ManejadorMovimiento.cs" />
     <Compile Include="ManejadorPaises.cs" />
     <Compile Include="ManejadorParticipantes.cs" />
-    <Compile Include="ManejadorRegistro.cs" />
+    <Compile Include="ManejadorPartida.cs" />
+    <Compile Include="ManejadorRepresenta.cs" />
+    <Compile Include="ManejadorSala.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

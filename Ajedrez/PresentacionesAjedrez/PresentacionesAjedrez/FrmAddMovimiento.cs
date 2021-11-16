@@ -7,18 +7,43 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Manejadores;
+using Entidades;
 
 namespace PresentacionesAjedrez
 {
     public partial class FrmAddMovimiento : Form
     {
+        ManejadorMovimiento mv;
         public FrmAddMovimiento()
         {
             InitializeComponent();
+            mv = new ManejadorMovimiento();
+            if (FrmMovimiento.m._IdMov!=0)
+            {
+                txtPartida.Text = FrmMovimiento.m._IdMov.ToString();
+                txtJugada.Text = FrmMovimiento.m._Jugada;
+                txtMovimiento.Text = FrmMovimiento.m._Movimiento.ToString();
+                txtComentario.Text = FrmMovimiento.m._Comentario;
+            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            Close();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if (FrmMovimiento.m._IdMov == 0)
+            {
+                MessageBox.Show(mv.Guardar(new Movimiento(FrmMovimiento.m._IdMov,int.Parse(txtPartida.Text),txtJugada.Text,int.Parse(txtMovimiento.Text),txtComentario.Text)));
+                Close();
+            }
+            else
+            {
+                MessageBox.Show(mv.Modificar(new Movimiento(FrmMovimiento.m._IdMov, int.Parse(txtPartida.Text), txtJugada.Text, int.Parse(txtMovimiento.Text), txtComentario.Text)));
+            }
             Close();
         }
     }

@@ -12,19 +12,19 @@ using Entidades;
 
 namespace PresentacionesAjedrez
 {
-    public partial class FrmAddRegistro : Form
+    public partial class FrmAddAlojamiento : Form
     {
-        ManejadorRegistro mr;
-        public FrmAddRegistro()
+        ManejadorAlojamiento mr;
+        public FrmAddAlojamiento()
         {
             InitializeComponent();
-            mr = new ManejadorRegistro();
-            if (FrmRegistro.re._IdRegistro!=0)
+            mr = new ManejadorAlojamiento();
+            if (FrmAlojamiento.re._IdAlojamiento!=0)
             {
-                txtFechaEntrada.Text = FrmRegistro.re._FechaEntrada;
-                txtFechaSalida.Text = FrmRegistro.re._FechaSalida;
-                cbParticipante.Text = FrmRegistro.re._FkIdParticipante.ToString();
-                cbHotel.Text = FrmRegistro.re._FkIdHotel.ToString();
+                txtFechaEntrada.Text = FrmAlojamiento.re._FechaEntrada;
+                txtFechaSalida.Text = FrmAlojamiento.re._FechaSalida;
+                cbParticipante.Text = FrmAlojamiento.re._FkIdPartiicpante.ToString();
+                cbHotel.Text = FrmAlojamiento.re._Hotel.ToString();
             }
         }
 
@@ -35,14 +35,14 @@ namespace PresentacionesAjedrez
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (FrmRegistro.re._IdRegistro == 0)
+            if (FrmAlojamiento.re._IdAlojamiento == 0)
             {
-                MessageBox.Show(mr.Guardar(new Registro(FrmRegistro.re._IdRegistro, txtFechaEntrada.Text,txtFechaSalida.Text,int.Parse(cbParticipante.SelectedValue.ToString()),int.Parse(cbHotel.SelectedValue.ToString()))));
+                MessageBox.Show(mr.Guardar(new Alojamiento(FrmAlojamiento.re._IdAlojamiento, int.Parse(cbParticipante.SelectedValue.ToString()), cbHotel.SelectedValue.ToString(), txtFechaEntrada.Text, txtFechaSalida.Text)));
                 Close();
             }
             else
             {
-                MessageBox.Show(mr.Modificar(new Registro(FrmRegistro.re._IdRegistro, txtFechaEntrada.Text, txtFechaSalida.Text, int.Parse(cbParticipante.SelectedValue.ToString()), int.Parse(cbHotel.SelectedValue.ToString()))));
+                MessageBox.Show(mr.Modificar(new Alojamiento(FrmAlojamiento.re._IdAlojamiento, int.Parse(cbParticipante.SelectedValue.ToString()), cbHotel.SelectedValue.ToString(), txtFechaEntrada.Text, txtFechaSalida.Text)));
             }
             Close();
         }
@@ -56,7 +56,7 @@ namespace PresentacionesAjedrez
 
             var listah = mr.LlenarHotel();
             cbHotel.DataSource = listah;
-            cbHotel.ValueMember = "_idHotel";
+            cbHotel.ValueMember = "_nombre";
             cbHotel.DisplayMember = "_nombre";
         }
     }

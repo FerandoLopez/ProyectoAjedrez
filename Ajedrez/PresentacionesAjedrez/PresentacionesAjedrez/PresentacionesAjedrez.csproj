@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmAddColor.cs">
+    <Compile Include="FrmAddArbitro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAddColor.Designer.cs">
-      <DependentUpon>FrmAddColor.cs</DependentUpon>
+    <Compile Include="FrmAddArbitro.Designer.cs">
+      <DependentUpon>FrmAddArbitro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddJugador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddJugador.Designer.cs">
+      <DependentUpon>FrmAddJugador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddRepresenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddRepresenta.Designer.cs">
+      <DependentUpon>FrmAddRepresenta.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmAddHotel.cs">
       <SubType>Form</SubType>
@@ -82,11 +94,11 @@
     <Compile Include="FrmAddPartida.Designer.cs">
       <DependentUpon>FrmAddPartida.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAddRegistro.cs">
+    <Compile Include="FrmAddAlojamiento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAddRegistro.Designer.cs">
-      <DependentUpon>FrmAddRegistro.cs</DependentUpon>
+    <Compile Include="FrmAddAlojamiento.Designer.cs">
+      <DependentUpon>FrmAddAlojamiento.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmAddSala.cs">
       <SubType>Form</SubType>
@@ -94,11 +106,23 @@
     <Compile Include="FrmAddSala.Designer.cs">
       <DependentUpon>FrmAddSala.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmColor.cs">
+    <Compile Include="FrmArbitro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmColor.Designer.cs">
-      <DependentUpon>FrmColor.cs</DependentUpon>
+    <Compile Include="FrmArbitro.Designer.cs">
+      <DependentUpon>FrmArbitro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJugador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJugador.Designer.cs">
+      <DependentUpon>FrmJugador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRepresenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRepresenta.Designer.cs">
+      <DependentUpon>FrmRepresenta.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmHotel.cs">
       <SubType>Form</SubType>
@@ -130,11 +154,11 @@
     <Compile Include="FrmPartida.Designer.cs">
       <DependentUpon>FrmPartida.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRegistro.cs">
+    <Compile Include="FrmAlojamiento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRegistro.Designer.cs">
-      <DependentUpon>FrmRegistro.cs</DependentUpon>
+    <Compile Include="FrmAlojamiento.Designer.cs">
+      <DependentUpon>FrmAlojamiento.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmSala.cs">
       <SubType>Form</SubType>
@@ -163,8 +187,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FrmAddColor.resx">
-      <DependentUpon>FrmAddColor.cs</DependentUpon>
+    <EmbeddedResource Include="FrmAddArbitro.resx">
+      <DependentUpon>FrmAddArbitro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddJugador.resx">
+      <DependentUpon>FrmAddJugador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddRepresenta.resx">
+      <DependentUpon>FrmAddRepresenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAddHotel.resx">
       <DependentUpon>FrmAddHotel.cs</DependentUpon>
@@ -181,14 +211,20 @@
     <EmbeddedResource Include="FrmAddPartida.resx">
       <DependentUpon>FrmAddPartida.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAddRegistro.resx">
-      <DependentUpon>FrmAddRegistro.cs</DependentUpon>
+    <EmbeddedResource Include="FrmAddAlojamiento.resx">
+      <DependentUpon>FrmAddAlojamiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAddSala.resx">
       <DependentUpon>FrmAddSala.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmColor.resx">
-      <DependentUpon>FrmColor.cs</DependentUpon>
+    <EmbeddedResource Include="FrmArbitro.resx">
+      <DependentUpon>FrmArbitro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJugador.resx">
+      <DependentUpon>FrmJugador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRepresenta.resx">
+      <DependentUpon>FrmRepresenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHotel.resx">
       <DependentUpon>FrmHotel.cs</DependentUpon>
@@ -211,8 +247,8 @@
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistro.resx">
-      <DependentUpon>FrmRegistro.cs</DependentUpon>
+    <EmbeddedResource Include="FrmAlojamiento.resx">
+      <DependentUpon>FrmAlojamiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSala.resx">
       <DependentUpon>FrmSala.cs</DependentUpon>

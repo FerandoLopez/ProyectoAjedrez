@@ -24,10 +24,8 @@ namespace PresentacionesAjedrez
 
                 txtNombre.Text = FrmParticipante.p._Nombre;
                 txtDireccion.Text = FrmParticipante.p._Direccion;
-                txtTelefono.Text = FrmParticipante.p._Telefono;
                 txtCampeonato.Text = FrmParticipante.p._Campeonato;
-                cbRol.Text = FrmParticipante.p._Rol;
-                cbColor.Text = FrmParticipante.p._Color;
+                txtTelefono.Text = FrmParticipante.p._Telefono;
                 cbPais.Text = FrmParticipante.p._FkIdPais.ToString();
             }
         }
@@ -41,12 +39,12 @@ namespace PresentacionesAjedrez
         {
             if (FrmParticipante.p._IdParticipante == 0)
                 {
-                    MessageBox.Show(mp.Guardar(new Participantes(FrmParticipante.p._IdParticipante,txtNombre.Text,txtDireccion.Text,txtTelefono.Text,txtCampeonato.Text,cbRol.SelectedValue.ToString(),cbColor.SelectedValue.ToString(), int.Parse(cbPais.SelectedValue.ToString()))));
+                    MessageBox.Show(mp.Guardar(new Participantes(FrmParticipante.p._IdParticipante,txtNombre.Text,txtDireccion.Text,txtCampeonato.Text,txtTelefono.Text,int.Parse(cbPais.SelectedValue.ToString()))));
                     Close();
                 }
                 else
                 {
-                    MessageBox.Show(mp.Modificar(new Participantes(FrmParticipante.p._IdParticipante, txtNombre.Text, txtDireccion.Text, txtTelefono.Text, txtCampeonato.Text, cbRol.SelectedValue.ToString(), cbColor.SelectedValue.ToString(), int.Parse(cbPais.SelectedValue.ToString()))));
+                    MessageBox.Show(mp.Modificar(new Participantes(FrmParticipante.p._IdParticipante, txtNombre.Text, txtDireccion.Text, txtCampeonato.Text, txtTelefono.Text, int.Parse(cbPais.SelectedValue.ToString()))));
             }
                 Close();
             }
@@ -57,16 +55,6 @@ namespace PresentacionesAjedrez
             cbPais.DataSource = lista;
             cbPais.ValueMember = "_idpais";
             cbPais.DisplayMember = "_nombre";
-
-            var listarol = mp.LlenarRol();
-            cbRol.DataSource = listarol;
-            cbRol.ValueMember = "_rol";
-            cbRol.DisplayMember = "_rol";
-
-            var listacolor = mp.LlenarColor();
-            cbColor.DataSource = listacolor;
-            cbColor.ValueMember = "_color";
-            cbColor.DisplayMember = "_color";
         }
     }
-    }
+   }

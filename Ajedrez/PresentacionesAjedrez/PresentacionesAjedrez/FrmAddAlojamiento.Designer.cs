@@ -1,7 +1,7 @@
 ﻿
 namespace PresentacionesAjedrez
 {
-    partial class FrmAddRegistro
+    partial class FrmAddAlojamiento
     {
         /// <summary>
         /// Required designer variable.
@@ -49,7 +49,7 @@ namespace PresentacionesAjedrez
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(29, 236);
+            this.label4.Location = new System.Drawing.Point(29, 121);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(152, 29);
             this.label4.TabIndex = 34;
@@ -61,14 +61,14 @@ namespace PresentacionesAjedrez
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(252, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 46);
+            this.label1.Size = new System.Drawing.Size(242, 46);
             this.label1.TabIndex = 32;
-            this.label1.Text = "Registro";
+            this.label1.Text = "Alojamiento";
             // 
             // txtFechaSalida
             // 
             this.txtFechaSalida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFechaSalida.Location = new System.Drawing.Point(285, 185);
+            this.txtFechaSalida.Location = new System.Drawing.Point(285, 293);
             this.txtFechaSalida.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFechaSalida.Name = "txtFechaSalida";
             this.txtFechaSalida.Size = new System.Drawing.Size(269, 30);
@@ -79,7 +79,7 @@ namespace PresentacionesAjedrez
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(29, 132);
+            this.label2.Location = new System.Drawing.Point(29, 240);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(219, 29);
             this.label2.TabIndex = 28;
@@ -90,7 +90,7 @@ namespace PresentacionesAjedrez
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(29, 185);
+            this.label3.Location = new System.Drawing.Point(29, 293);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(203, 29);
             this.label3.TabIndex = 29;
@@ -99,7 +99,7 @@ namespace PresentacionesAjedrez
             // txtFechaEntrada
             // 
             this.txtFechaEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFechaEntrada.Location = new System.Drawing.Point(285, 132);
+            this.txtFechaEntrada.Location = new System.Drawing.Point(285, 240);
             this.txtFechaEntrada.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFechaEntrada.Name = "txtFechaEntrada";
             this.txtFechaEntrada.Size = new System.Drawing.Size(269, 30);
@@ -153,7 +153,7 @@ namespace PresentacionesAjedrez
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(29, 295);
+            this.label5.Location = new System.Drawing.Point(29, 180);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(75, 29);
             this.label5.TabIndex = 36;
@@ -163,8 +163,8 @@ namespace PresentacionesAjedrez
             // 
             this.cbParticipante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbParticipante.FormattingEnabled = true;
-            this.cbParticipante.Location = new System.Drawing.Point(285, 240);
-            this.cbParticipante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbParticipante.Location = new System.Drawing.Point(285, 125);
+            this.cbParticipante.Margin = new System.Windows.Forms.Padding(4);
             this.cbParticipante.Name = "cbParticipante";
             this.cbParticipante.Size = new System.Drawing.Size(269, 33);
             this.cbParticipante.TabIndex = 37;
@@ -173,13 +173,13 @@ namespace PresentacionesAjedrez
             // 
             this.cbHotel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbHotel.FormattingEnabled = true;
-            this.cbHotel.Location = new System.Drawing.Point(285, 299);
-            this.cbHotel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbHotel.Location = new System.Drawing.Point(285, 184);
+            this.cbHotel.Margin = new System.Windows.Forms.Padding(4);
             this.cbHotel.Name = "cbHotel";
             this.cbHotel.Size = new System.Drawing.Size(269, 33);
             this.cbHotel.TabIndex = 38;
             // 
-            // FrmAddRegistro
+            // FrmAddAlojamiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -197,8 +197,8 @@ namespace PresentacionesAjedrez
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "FrmAddRegistro";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "FrmAddAlojamiento";
             this.Text = "FrmAddRegistro";
             this.Load += new System.EventHandler(this.FrmAddRegistro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

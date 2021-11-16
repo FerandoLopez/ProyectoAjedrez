@@ -19,7 +19,7 @@ namespace PresentacionesAjedrez
         {
             InitializeComponent();
             mp = new ManejadorPaises();
-            if (FrmPais.p._IdPais!=0)
+            if (FrmPais.p._IdPais != 0)
             {
                 txtNombre.Text = FrmPais.p._Nombre;
                 txtClubes.Text = FrmPais.p._NoClubes.ToString();
@@ -35,14 +35,13 @@ namespace PresentacionesAjedrez
         {
             if (FrmPais.p._IdPais == 0)
             {
-                MessageBox.Show(mp.Guardar(new Paises(FrmPais.p._IdPais, txtNombre.Text, int.Parse(txtClubes.Text), FrmPais.p._FkIdPais)));
+                MessageBox.Show(mp.Guardar(new Paises(FrmPais.p._IdPais, txtNombre.Text, int.Parse(txtClubes.Text))));
                 Close();
             }
             else
             {
-                MessageBox.Show(mp.Modificar(new Paises(FrmPais.p._IdPais, txtNombre.Text, int.Parse(txtClubes.Text), FrmPais.p._FkIdPais)));
+                MessageBox.Show(mp.Modificar(new Paises(FrmPais.p._IdPais, txtNombre.Text, int.Parse(txtClubes.Text))));
             }
-            Close();
         }
     }
 }

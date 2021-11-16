@@ -31,7 +31,6 @@ namespace PresentacionesAjedrez
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            h._IdHotel = 0;
             h._Nombre = "";
             h._Direccion = "";
             h._Telefono = "";
@@ -44,10 +43,9 @@ namespace PresentacionesAjedrez
         private void dtgHoteles_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
             i = e.RowIndex;
-            h._IdHotel = int.Parse(dtgHoteles.Rows[i].Cells[0].Value.ToString());
-            h._Nombre = dtgHoteles.Rows[i].Cells[1].Value.ToString();
-            h._Direccion = dtgHoteles.Rows[i].Cells[2].Value.ToString();
-            h._Telefono = dtgHoteles.Rows[i].Cells[3].Value.ToString();
+            h._Nombre = dtgHoteles.Rows[i].Cells[0].Value.ToString();
+            h._Direccion = dtgHoteles.Rows[i].Cells[1].Value.ToString();
+            h._Telefono = dtgHoteles.Rows[i].Cells[2].Value.ToString();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

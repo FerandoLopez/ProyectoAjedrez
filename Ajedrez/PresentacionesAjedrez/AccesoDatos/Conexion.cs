@@ -94,9 +94,9 @@ namespace AccesoDatos
             }
         }
 
-        public List<ComboRol> LlenarRol(string consulta)
+        public List<ComboJugador> LlenarJugador(string consulta)
         {
-            List<ComboRol> lista = new List<ComboRol>();
+            List<ComboJugador> lista = new List<ComboJugador>();
 
             try
             {
@@ -107,9 +107,9 @@ namespace AccesoDatos
                 {
                     while (reader.Read())
                     {
-                        ComboRol cr = new ComboRol();
-                        cr._Rol = reader["rol"].ToString();
-                        lista.Add(cr);
+                        ComboJugador cj = new ComboJugador();
+                        cj._IdJugador = reader["idjugador"].ToString();
+                        lista.Add(cj);
                     }
                 }
                 con.Close();
@@ -122,9 +122,9 @@ namespace AccesoDatos
             }
         }
 
-        public List<ComboColor> LlenarColor(string consulta)
+        public List<ComboArbitro> LlenarArbitro(string consulta)
         {
-            List<ComboColor> lista = new List<ComboColor>();
+            List<ComboArbitro> listaa = new List<ComboArbitro>();
 
             try
             {
@@ -135,20 +135,22 @@ namespace AccesoDatos
                 {
                     while (reader.Read())
                     {
-                        ComboColor cc = new ComboColor();
-                        cc._Color = reader["color"].ToString();
-                        lista.Add(cc);
+                        ComboArbitro ca = new ComboArbitro();
+                        ca._IdArbitro = reader["idarbitro"].ToString();
+                        listaa.Add(ca);
                     }
                 }
                 con.Close();
-                return lista;
+                return listaa;
             }
             catch (Exception)
             {
                 con.Close();
-                return lista;
+                return listaa;
             }
         }
+
+     
 
 
 
@@ -197,9 +199,36 @@ namespace AccesoDatos
                     while (reader.Read())
                     {
                         ComboHotel ch = new ComboHotel();
-                        ch._IdHotel = int.Parse(reader["idhotel"].ToString());
                         ch._Nombre = reader["nombre"].ToString();
                         lista.Add(ch);
+                    }
+                }
+                con.Close();
+                return lista;
+            }
+            catch (Exception)
+            {
+                con.Close();
+                return lista;
+            }
+        }
+
+        public List<ComboSala> LlenarSala(string consulta)
+        {
+            List<ComboSala> lista = new List<ComboSala>();
+
+            try
+            {
+                con.Open();
+                var command = new MySqlCommand(consulta, con);
+                var reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        ComboSala cs = new ComboSala();
+                        cs._IdSala = int.Parse(reader["idsala"].ToString());
+                        lista.Add(cs);
                     }
                 }
                 con.Close();

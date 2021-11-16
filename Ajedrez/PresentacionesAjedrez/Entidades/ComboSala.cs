@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class ComboColor
+    public class ComboSala
     {
-        public ComboColor(string color)
+        public ComboSala(int idSala)
         {
-            _Color = color;
+            _IdSala = idSala;
         }
 
-        public string _Color { get; set; }
-
-        public ComboColor()
+        public int _IdSala { get; set; }
+        public ComboSala()
         {
 
         }

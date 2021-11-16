@@ -34,9 +34,6 @@ C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug
 C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.csproj.CoreCompileInputs.cache
 C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.exe
 C:\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.pdb
-C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\Google.Protobuf.dll
-C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\Google.Protobuf.xml
-C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.Properties.Resources.resources
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\PresentacionesAjedrez.exe.config
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\PresentacionesAjedrez.exe
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\PresentacionesAjedrez.pdb
@@ -44,6 +41,7 @@ C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\Pr
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\Manejadores.dll
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\AccesoDatos.dll
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\MySql.Data.dll
+C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\Google.Protobuf.dll
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\ZstdNet.dll
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\K4os.Compression.LZ4.Streams.dll
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\BouncyCastle.Crypto.dll
@@ -59,6 +57,7 @@ C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\Pr
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\AccesoDatos.dll.config
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\MySql.Data.xml
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\Google.Protobuf.pdb
+C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\Google.Protobuf.xml
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\K4os.Compression.LZ4.Streams.xml
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\System.Memory.xml
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\System.Buffers.xml
@@ -67,15 +66,19 @@ C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\Pr
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.csproj.AssemblyReference.cache
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.exe.config
-C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmAddColor.resources
+C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmAddArbitro.resources
+C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmAddJugador.resources
+C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmAddRepresenta.resources
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmAddHotel.resources
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmAddMovimiento.resources
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmAddPais.resources
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmAddParticipante.resources
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmAddPartida.resources
-C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmAddRegistro.resources
+C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmAddAlojamiento.resources
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmAddSala.resources
-C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmColor.resources
+C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmArbitro.resources
+C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmJugador.resources
+C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmRepresenta.resources
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmHotel.resources
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmLogin.resources
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmMovimiento.resources
@@ -83,8 +86,9 @@ C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\Pr
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmParticipante.resources
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmPartida.resources
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmPrincipal.resources
-C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmRegistro.resources
+C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmAlojamiento.resources
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.FrmSala.resources
+C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.Properties.Resources.resources
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.csproj.GenerateResource.cache
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.csproj.CoreCompileInputs.cache
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.exe

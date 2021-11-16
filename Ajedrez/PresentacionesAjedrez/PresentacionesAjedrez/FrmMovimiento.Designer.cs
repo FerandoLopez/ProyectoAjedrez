@@ -29,7 +29,7 @@ namespace PresentacionesAjedrez
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -47,9 +47,9 @@ namespace PresentacionesAjedrez
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(623, 179);
+            this.panel1.Size = new System.Drawing.Size(831, 220);
             this.panel1.TabIndex = 58;
             // 
             // label2
@@ -58,10 +58,9 @@ namespace PresentacionesAjedrez
             this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 37.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(65, 54);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(87, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(548, 59);
+            this.label2.Size = new System.Drawing.Size(668, 72);
             this.label2.TabIndex = 0;
             this.label2.Text = "M O V I M I E N T O S";
             // 
@@ -73,12 +72,14 @@ namespace PresentacionesAjedrez
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(454, 556);
+            this.btnEliminar.Location = new System.Drawing.Point(605, 684);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(150, 39);
+            this.btnEliminar.Size = new System.Drawing.Size(200, 48);
             this.btnEliminar.TabIndex = 55;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnAgregar
             // 
@@ -88,9 +89,10 @@ namespace PresentacionesAjedrez
             this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(298, 556);
+            this.btnAgregar.Location = new System.Drawing.Point(397, 684);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(150, 39);
+            this.btnAgregar.Size = new System.Drawing.Size(200, 48);
             this.btnAgregar.TabIndex = 54;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -101,9 +103,10 @@ namespace PresentacionesAjedrez
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(24, 232);
+            this.label1.Location = new System.Drawing.Point(32, 286);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 21);
+            this.label1.Size = new System.Drawing.Size(75, 28);
             this.label1.TabIndex = 57;
             this.label1.Text = "Buscar";
             // 
@@ -111,36 +114,41 @@ namespace PresentacionesAjedrez
             // 
             this.dtgMovimientos.AllowUserToAddRows = false;
             this.dtgMovimientos.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgMovimientos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgMovimientos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgMovimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgMovimientos.Location = new System.Drawing.Point(27, 281);
+            this.dtgMovimientos.Location = new System.Drawing.Point(36, 346);
+            this.dtgMovimientos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtgMovimientos.Name = "dtgMovimientos";
             this.dtgMovimientos.ReadOnly = true;
             this.dtgMovimientos.RowHeadersWidth = 51;
-            this.dtgMovimientos.Size = new System.Drawing.Size(577, 257);
+            this.dtgMovimientos.Size = new System.Drawing.Size(769, 316);
             this.dtgMovimientos.TabIndex = 56;
+            this.dtgMovimientos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgMovimientos_CellDoubleClick);
+            this.dtgMovimientos.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgMovimientos_CellEnter);
             // 
             // txtBuscarMovimiento
             // 
             this.txtBuscarMovimiento.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarMovimiento.Location = new System.Drawing.Point(86, 228);
+            this.txtBuscarMovimiento.Location = new System.Drawing.Point(115, 281);
+            this.txtBuscarMovimiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBuscarMovimiento.Name = "txtBuscarMovimiento";
-            this.txtBuscarMovimiento.Size = new System.Drawing.Size(519, 29);
+            this.txtBuscarMovimiento.Size = new System.Drawing.Size(691, 34);
             this.txtBuscarMovimiento.TabIndex = 53;
+            this.txtBuscarMovimiento.TextChanged += new System.EventHandler(this.txtBuscarMovimiento_TextChanged);
             // 
             // FrmMovimiento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(623, 596);
+            this.ClientSize = new System.Drawing.Size(831, 734);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
@@ -148,9 +156,10 @@ namespace PresentacionesAjedrez
             this.Controls.Add(this.dtgMovimientos);
             this.Controls.Add(this.txtBuscarMovimiento);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmMovimiento";
             this.Text = "FrmMovimiento";
+            this.Load += new System.EventHandler(this.FrmMovimiento_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgMovimientos)).EndInit();

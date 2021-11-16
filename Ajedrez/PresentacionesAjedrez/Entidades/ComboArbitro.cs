@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class ComboRol
+    public class ComboArbitro
     {
-        public ComboRol(string rol)
+        public ComboArbitro(string idArbitro)
         {
-            _Rol = rol;
+            _IdArbitro = idArbitro;
         }
 
-        public string _Rol { get; set; }
+        public string _IdArbitro { get; set; }
 
-        public ComboRol()
+        public ComboArbitro()
         {
 
         }

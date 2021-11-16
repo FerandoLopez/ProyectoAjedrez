@@ -8,15 +8,7 @@ namespace Entidades
 {
    public class Hotel
     {
-        public Hotel(int idHotel, string nombre, string direccion, string telefono)
-        {
-            _IdHotel = idHotel;
-            _Nombre = nombre;
-            _Direccion = direccion;
-            _Telefono = telefono;
-        }
 
-        public int _IdHotel { get; set; }
         public string _Nombre { get; set; }
         public string _Direccion { get; set; }
         public string _Telefono { get; set; }
@@ -24,6 +16,13 @@ namespace Entidades
         public Hotel()
         {
 
+        }
+
+        public Hotel(string nombre, string direccion, string telefono)
+        {
+            _Nombre = nombre;
+            _Direccion = direccion;
+            _Telefono = telefono;
         }
     }
 }

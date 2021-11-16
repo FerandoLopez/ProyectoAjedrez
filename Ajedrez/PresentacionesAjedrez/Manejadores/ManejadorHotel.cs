@@ -15,7 +15,7 @@ namespace Manejadores
 
         public string Guardar(Hotel hotel)
         {
-            return c.Comando(string.Format("call p_insertarhotel(null,'{0}','{1}','{2}')", hotel._Nombre,hotel._Direccion,hotel._Telefono));
+            return c.Comando(string.Format("call p_insertarhotel('{0}','{1}','{2}')", hotel._Nombre,hotel._Direccion,hotel._Telefono));
         }
 
         public void Mostrar(DataGridView tabla, string dato)
@@ -26,7 +26,7 @@ namespace Manejadores
 
         public string Modificar(Hotel hotel)
         {
-            return c.Comando(string.Format("call p_modificarhotel('{0}','{1}','{2}','{3}')", hotel._IdHotel,hotel._Nombre,hotel._Direccion,hotel._Telefono));
+            return c.Comando(string.Format("call p_modificarhotel('{0}','{1}','{2}')", hotel._Nombre,hotel._Direccion,hotel._Telefono));
         }
 
         public string Eliminar(Hotel hotel)
@@ -35,7 +35,7 @@ namespace Manejadores
             DialogResult rs = MessageBox.Show("Está seguro de eliminar " + hotel._Nombre, "Atencion!", MessageBoxButtons.YesNo);
             if (rs == DialogResult.Yes)
             {
-                r = c.Comando(string.Format("call p_eliminarhotel('{0}')", hotel._IdHotel));
+                r = c.Comando(string.Format("call p_eliminarhotel('{0}')", hotel._Nombre));
             }
             return r;
         }

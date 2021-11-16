@@ -19,7 +19,7 @@ namespace PresentacionesAjedrez
         {
             InitializeComponent();
             mh = new ManejadorHotel();
-            if (FrmHotel.h._IdHotel!=0)
+            if (!(FrmHotel.h._Nombre.Equals("")))
             {
                 txtNombre.Text = FrmHotel.h._Nombre;
                 txtDireccion.Text = FrmHotel.h._Direccion;
@@ -34,14 +34,14 @@ namespace PresentacionesAjedrez
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (FrmHotel.h._IdHotel == 0)
+            if (FrmHotel.h._Nombre.Equals(""))
             {
-                MessageBox.Show(mh.Guardar(new Hotel(FrmHotel.h._IdHotel, txtNombre.Text, txtDireccion.Text,txtTelefono.Text)));
+                MessageBox.Show(mh.Guardar(new Hotel( txtNombre.Text, txtDireccion.Text,txtTelefono.Text)));
                 Close();
             }
             else
             {
-                MessageBox.Show(mh.Modificar(new Hotel(FrmHotel.h._IdHotel, txtNombre.Text, txtDireccion.Text, txtTelefono.Text)));
+                MessageBox.Show(mh.Modificar(new Hotel(txtNombre.Text, txtDireccion.Text, txtTelefono.Text)));
             }
             Close();
         }
