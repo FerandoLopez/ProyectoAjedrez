@@ -223,6 +223,16 @@ namespace PresentacionesAjedrez.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_árbitro_80 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-árbitro-80", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_buscar_cliente_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8_buscar_cliente_48", resourceCulture);
@@ -436,6 +446,16 @@ namespace PresentacionesAjedrez.Properties {
         internal static System.Drawing.Bitmap icons8_hotel_star_40 {
             get {
                 object obj = ResourceManager.GetObject("icons8_hotel_star_40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_jugador_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-jugador-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -756,6 +776,16 @@ namespace PresentacionesAjedrez.Properties {
         internal static System.Drawing.Bitmap icons8_trash_can_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8_trash_can_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_ubicación_en_todo_el_mundo_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-ubicación-en-todo-el-mundo-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
