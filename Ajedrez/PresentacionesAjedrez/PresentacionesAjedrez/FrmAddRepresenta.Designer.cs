@@ -30,13 +30,15 @@ namespace PresentacionesAjedrez
         private void InitializeComponent()
         {
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Color = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.cbRepresentante = new System.Windows.Forms.ComboBox();
             this.cbRepresentado = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,27 +52,6 @@ namespace PresentacionesAjedrez
             this.label4.Size = new System.Drawing.Size(178, 29);
             this.label4.TabIndex = 34;
             this.label4.Text = "Representado";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_add_96px;
-            this.pictureBox1.Location = new System.Drawing.Point(76, 31);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 90);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 33;
-            this.pictureBox1.TabStop = false;
-            // 
-            // Color
-            // 
-            this.Color.AutoSize = true;
-            this.Color.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Color.Location = new System.Drawing.Point(183, 58);
-            this.Color.Name = "Color";
-            this.Color.Size = new System.Drawing.Size(235, 46);
-            this.Color.TabIndex = 32;
-            this.Color.Text = "Representa";
             // 
             // label3
             // 
@@ -120,7 +101,7 @@ namespace PresentacionesAjedrez
             this.cbRepresentante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRepresentante.FormattingEnabled = true;
             this.cbRepresentante.Location = new System.Drawing.Point(223, 188);
-            this.cbRepresentante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbRepresentante.Margin = new System.Windows.Forms.Padding(4);
             this.cbRepresentante.Name = "cbRepresentante";
             this.cbRepresentante.Size = new System.Drawing.Size(242, 33);
             this.cbRepresentante.TabIndex = 35;
@@ -130,29 +111,63 @@ namespace PresentacionesAjedrez
             this.cbRepresentado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRepresentado.FormattingEnabled = true;
             this.cbRepresentado.Location = new System.Drawing.Point(223, 240);
-            this.cbRepresentado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbRepresentado.Margin = new System.Windows.Forms.Padding(4);
             this.cbRepresentado.Name = "cbRepresentado";
             this.cbRepresentado.Size = new System.Drawing.Size(242, 33);
             this.cbRepresentado.TabIndex = 36;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(493, 100);
+            this.panel1.TabIndex = 37;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(188, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(235, 46);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Representa";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_add_96px;
+            this.pictureBox1.Location = new System.Drawing.Point(82, 8);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 90);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmAddRepresenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 384);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.cbRepresentado);
             this.Controls.Add(this.cbRepresentante);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.Color);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAddRepresenta";
             this.Text = "FrmAddColor";
             this.Load += new System.EventHandler(this.FrmAddRepresenta_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -161,12 +176,13 @@ namespace PresentacionesAjedrez
 
         #endregion
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label Color;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.ComboBox cbRepresentante;
         private System.Windows.Forms.ComboBox cbRepresentado;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -31,16 +31,18 @@ namespace PresentacionesAjedrez
         {
             this.txtComentario = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtMovimiento = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtJugada = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtPartida = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,16 +65,6 @@ namespace PresentacionesAjedrez
             this.label4.Size = new System.Drawing.Size(148, 29);
             this.label4.TabIndex = 34;
             this.label4.Text = "Comentario";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(169, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 46);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "Movimientos";
             // 
             // txtMovimiento
             // 
@@ -113,17 +105,6 @@ namespace PresentacionesAjedrez
             this.txtJugada.Name = "txtJugada";
             this.txtJugada.Size = new System.Drawing.Size(269, 30);
             this.txtJugada.TabIndex = 30;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_add_96px;
-            this.pictureBox1.Location = new System.Drawing.Point(63, 14);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 90);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 33;
-            this.pictureBox1.TabStop = false;
             // 
             // btnCancelar
             // 
@@ -177,17 +158,49 @@ namespace PresentacionesAjedrez
             this.txtPartida.Size = new System.Drawing.Size(269, 30);
             this.txtPartida.TabIndex = 37;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(508, 100);
+            this.panel1.TabIndex = 38;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(184, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(255, 46);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Movimientos";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_add_96px;
+            this.pictureBox1.Location = new System.Drawing.Point(61, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 90);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmAddMovimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(508, 416);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtPartida);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtComentario);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtMovimiento);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
@@ -195,9 +208,11 @@ namespace PresentacionesAjedrez
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAddMovimiento";
             this.Text = "FrmAddMovimiento";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -208,8 +223,6 @@ namespace PresentacionesAjedrez
 
         private System.Windows.Forms.TextBox txtComentario;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtMovimiento;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -218,5 +231,8 @@ namespace PresentacionesAjedrez
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtPartida;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

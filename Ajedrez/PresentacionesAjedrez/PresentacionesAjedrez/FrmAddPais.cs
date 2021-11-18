@@ -35,13 +35,14 @@ namespace PresentacionesAjedrez
         {
             if (FrmPais.p._IdPais == 0)
             {
-                MessageBox.Show(mp.Guardar(new Paises(FrmPais.p._IdPais, txtNombre.Text, int.Parse(txtClubes.Text))));
+                MessageBox.Show(mp.Guardar(new Paises(FrmPais.p._IdPais, txtNombre.Text, int.Parse(txtClubes.Text),int.Parse(txtNoPais.Text))));
                 Close();
             }
             else
             {
-                MessageBox.Show(mp.Modificar(new Paises(FrmPais.p._IdPais, txtNombre.Text, int.Parse(txtClubes.Text))));
+                MessageBox.Show(mp.Modificar(new Paises(FrmPais.p._IdPais, txtNombre.Text, int.Parse(txtClubes.Text),int.Parse(txtNoPais.Text))));
             }
+            Close();
         }
     }
 }

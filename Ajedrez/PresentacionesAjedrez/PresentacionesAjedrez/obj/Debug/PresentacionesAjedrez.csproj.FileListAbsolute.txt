@@ -93,3 +93,4 @@ C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\Pr
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.csproj.CoreCompileInputs.cache
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.exe
 C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.pdb
+C:\Users\Fernando López\Desktop\Administración de Base de Datos\3er Parcial\ProyectoAjedrez\Ajedrez\PresentacionesAjedrez\PresentacionesAjedrez\obj\Debug\PresentacionesAjedrez.csproj.CopyComplete

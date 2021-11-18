@@ -31,8 +31,6 @@ namespace PresentacionesAjedrez
         {
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,13 +41,17 @@ namespace PresentacionesAjedrez
             this.txtCampeonato = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cbPais = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTelefono
             // 
             this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(223, 290);
+            this.txtTelefono.Location = new System.Drawing.Point(223, 314);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(269, 30);
@@ -60,37 +62,16 @@ namespace PresentacionesAjedrez
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(47, 290);
+            this.label4.Location = new System.Drawing.Point(47, 314);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(118, 29);
             this.label4.TabIndex = 34;
             this.label4.Text = "Telefono";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_add_96px;
-            this.pictureBox1.Location = new System.Drawing.Point(80, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 90);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 33;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(187, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 46);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "Participante";
-            // 
             // txtDireccion
             // 
             this.txtDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccion.Location = new System.Drawing.Point(223, 170);
+            this.txtDireccion.Location = new System.Drawing.Point(223, 194);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(269, 30);
@@ -101,7 +82,7 @@ namespace PresentacionesAjedrez
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(47, 117);
+            this.label2.Location = new System.Drawing.Point(47, 141);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 29);
             this.label2.TabIndex = 28;
@@ -112,7 +93,7 @@ namespace PresentacionesAjedrez
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(47, 170);
+            this.label3.Location = new System.Drawing.Point(47, 194);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(124, 29);
             this.label3.TabIndex = 29;
@@ -121,7 +102,7 @@ namespace PresentacionesAjedrez
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(223, 117);
+            this.txtNombre.Location = new System.Drawing.Point(223, 141);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(269, 30);
@@ -134,7 +115,7 @@ namespace PresentacionesAjedrez
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
             this.btnCancelar.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_cancel_2;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(357, 425);
+            this.btnCancelar.Location = new System.Drawing.Point(357, 449);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(135, 47);
@@ -150,7 +131,7 @@ namespace PresentacionesAjedrez
             this.btnGuardar.ForeColor = System.Drawing.Color.Black;
             this.btnGuardar.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_save_close;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(209, 425);
+            this.btnGuardar.Location = new System.Drawing.Point(209, 449);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(137, 47);
@@ -164,7 +145,7 @@ namespace PresentacionesAjedrez
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(47, 235);
+            this.label5.Location = new System.Drawing.Point(47, 259);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(161, 29);
             this.label5.TabIndex = 36;
@@ -173,7 +154,7 @@ namespace PresentacionesAjedrez
             // txtCampeonato
             // 
             this.txtCampeonato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCampeonato.Location = new System.Drawing.Point(223, 234);
+            this.txtCampeonato.Location = new System.Drawing.Point(223, 258);
             this.txtCampeonato.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCampeonato.Name = "txtCampeonato";
             this.txtCampeonato.Size = new System.Drawing.Size(269, 30);
@@ -184,7 +165,7 @@ namespace PresentacionesAjedrez
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(47, 353);
+            this.label7.Location = new System.Drawing.Point(47, 377);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 29);
             this.label7.TabIndex = 40;
@@ -194,25 +175,57 @@ namespace PresentacionesAjedrez
             // 
             this.cbPais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPais.FormattingEnabled = true;
-            this.cbPais.Location = new System.Drawing.Point(223, 353);
+            this.cbPais.Location = new System.Drawing.Point(223, 377);
             this.cbPais.Margin = new System.Windows.Forms.Padding(4);
             this.cbPais.Name = "cbPais";
             this.cbPais.Size = new System.Drawing.Size(269, 33);
             this.cbPais.TabIndex = 42;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(521, 100);
+            this.panel1.TabIndex = 43;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(201, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(243, 46);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Participante";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_add_96px;
+            this.pictureBox1.Location = new System.Drawing.Point(95, 5);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 90);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmAddParticipante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(521, 507);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.cbPais);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtCampeonato);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
@@ -224,6 +237,8 @@ namespace PresentacionesAjedrez
             this.Name = "FrmAddParticipante";
             this.Text = "FrmAddParticipante";
             this.Load += new System.EventHandler(this.FrmAddParticipante_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -234,8 +249,6 @@ namespace PresentacionesAjedrez
 
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -246,5 +259,8 @@ namespace PresentacionesAjedrez
         private System.Windows.Forms.TextBox txtCampeonato;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbPais;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

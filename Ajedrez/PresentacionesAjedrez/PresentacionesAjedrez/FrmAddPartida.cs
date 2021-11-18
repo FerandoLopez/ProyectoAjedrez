@@ -70,8 +70,9 @@ namespace PresentacionesAjedrez
                 MessageBox.Show(mp.Modificar(new Partida(FrmPartida.p._IdPartida, txtFecha.Text, cbJugador1.SelectedValue.ToString(), txtColor.Text,
                     cbJugador2.SelectedValue.ToString(), txtColor2.Text, cbArbitro.SelectedValue.ToString(), int.Parse(txtSala.Text),
                     int.Parse(txtEntradas.Text.ToString()))));
-                Close();
+        
             }
+            Close();
         }
     }
 }
