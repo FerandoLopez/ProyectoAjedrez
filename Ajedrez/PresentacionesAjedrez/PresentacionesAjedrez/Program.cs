@@ -11,7 +11,7 @@ namespace PresentacionesAjedrez
     {
         static void Main()
         {
-            Application.Run(new FrmPrincipal());
+            Application.Run(new FrmLogin());
         }
     }
 }

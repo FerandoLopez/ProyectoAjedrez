@@ -38,8 +38,6 @@ namespace PresentacionesAjedrez
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtNoPais = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -47,7 +45,7 @@ namespace PresentacionesAjedrez
             // txtClubes
             // 
             this.txtClubes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtClubes.Location = new System.Drawing.Point(189, 225);
+            this.txtClubes.Location = new System.Drawing.Point(190, 204);
             this.txtClubes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtClubes.Name = "txtClubes";
             this.txtClubes.Size = new System.Drawing.Size(269, 30);
@@ -58,7 +56,7 @@ namespace PresentacionesAjedrez
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(26, 172);
+            this.label2.Location = new System.Drawing.Point(27, 151);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 29);
             this.label2.TabIndex = 10;
@@ -69,7 +67,7 @@ namespace PresentacionesAjedrez
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(26, 225);
+            this.label3.Location = new System.Drawing.Point(27, 204);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 29);
             this.label3.TabIndex = 11;
@@ -78,7 +76,7 @@ namespace PresentacionesAjedrez
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(189, 172);
+            this.txtNombre.Location = new System.Drawing.Point(190, 151);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(269, 30);
@@ -113,7 +111,7 @@ namespace PresentacionesAjedrez
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
             this.btnCancelar.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_cancel_2;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(323, 290);
+            this.btnCancelar.Location = new System.Drawing.Point(324, 269);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(135, 47);
@@ -129,7 +127,7 @@ namespace PresentacionesAjedrez
             this.btnGuardar.ForeColor = System.Drawing.Color.Black;
             this.btnGuardar.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_save_close;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(175, 290);
+            this.btnGuardar.Location = new System.Drawing.Point(176, 269);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(137, 47);
@@ -148,34 +146,12 @@ namespace PresentacionesAjedrez
             this.panel1.Size = new System.Drawing.Size(480, 100);
             this.panel1.TabIndex = 16;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(26, 127);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 29);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "No. Pais";
-            // 
-            // txtNoPais
-            // 
-            this.txtNoPais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNoPais.Location = new System.Drawing.Point(189, 127);
-            this.txtNoPais.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtNoPais.Name = "txtNoPais";
-            this.txtNoPais.Size = new System.Drawing.Size(269, 30);
-            this.txtNoPais.TabIndex = 18;
-            // 
             // FrmAddPais
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(480, 368);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtNoPais);
+            this.ClientSize = new System.Drawing.Size(480, 347);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtClubes);
             this.Controls.Add(this.label2);
@@ -206,7 +182,5 @@ namespace PresentacionesAjedrez
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtNoPais;
     }
 }

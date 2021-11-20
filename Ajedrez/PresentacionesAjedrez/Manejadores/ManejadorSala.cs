@@ -15,7 +15,7 @@ namespace Manejadores
 
         public string Guardar(Sala sala)
         {
-            return c.Comando(string.Format("call p_insertarsala(null,'{0}','{1}','{2}')", sala._Medios,sala._Capacidad,sala._Hotel));
+            return c.Comando(string.Format("call p_insertarsala(null,'{0}','{1}','{2}')", sala._Medios, sala._Capacidad, sala._Hotel));
         }
 
         public void Mostrar(DataGridView tabla, string dato)
@@ -26,7 +26,7 @@ namespace Manejadores
 
         public string Modificar(Sala sala)
         {
-            return c.Comando(string.Format("call p_modificarsala('{0}','{1}','{2}','{3}')", sala._IdSala,sala._Medios,sala._Capacidad,sala._Hotel));
+            return c.Comando(string.Format("call p_modificarsala('{0}','{1}','{2}','{3}')", sala._IdSala, sala._Medios, sala._Capacidad, sala._Hotel));
         }
 
         public string Eliminar(Sala sala)
@@ -44,5 +44,12 @@ namespace Manejadores
         {
             return c.LlenarHotel("select nombre from hotel");
         }
+
+        public List<ComboSala> LlenarSala()
+
+        {
+            return c.LlenarSala("select idsala from sala");
+        }
     }
 }
+

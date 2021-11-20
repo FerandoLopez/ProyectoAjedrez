@@ -21,7 +21,7 @@ namespace PresentacionesAjedrez
             mv = new ManejadorMovimiento();
             if (FrmMovimiento.m._IdMov!=0)
             {
-                txtPartida.Text = FrmMovimiento.m._IdMov.ToString();
+                cbPartida.Text = FrmMovimiento.m._IdMov.ToString();
                 txtJugada.Text = FrmMovimiento.m._Jugada;
                 txtMovimiento.Text = FrmMovimiento.m._Movimiento.ToString();
                 txtComentario.Text = FrmMovimiento.m._Comentario;
@@ -37,14 +37,22 @@ namespace PresentacionesAjedrez
         {
             if (FrmMovimiento.m._IdMov == 0)
             {
-                MessageBox.Show(mv.Guardar(new Movimiento(FrmMovimiento.m._IdMov,int.Parse(txtPartida.Text),txtJugada.Text,int.Parse(txtMovimiento.Text),txtComentario.Text)));
+                MessageBox.Show(mv.Guardar(new Movimiento(FrmMovimiento.m._IdMov,int.Parse(cbPartida.SelectedValue.ToString()),txtJugada.Text,int.Parse(txtMovimiento.Text),txtComentario.Text)));
                 Close();
             }
             else
             {
-                MessageBox.Show(mv.Modificar(new Movimiento(FrmMovimiento.m._IdMov, int.Parse(txtPartida.Text), txtJugada.Text, int.Parse(txtMovimiento.Text), txtComentario.Text)));
+                MessageBox.Show(mv.Modificar(new Movimiento(FrmMovimiento.m._IdMov, int.Parse(cbPartida.SelectedValue.ToString()), txtJugada.Text, int.Parse(txtMovimiento.Text), txtComentario.Text)));
             }
             Close();
+        }
+
+        private void FrmAddMovimiento_Load(object sender, EventArgs e)
+        {
+            var listap = mv.LlenarPartida();
+            cbPartida.DataSource = listap;
+            cbPartida.ValueMember = "_idpartida";
+            cbPartida.DisplayMember = "id_partida";
         }
     }
 }

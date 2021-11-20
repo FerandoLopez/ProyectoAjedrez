@@ -39,6 +39,7 @@ namespace PresentacionesAjedrez
             FrmAddMovimiento fam = new FrmAddMovimiento();
             fam.Dock = DockStyle.Fill;
             fam.ShowDialog();
+            Actualizar();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

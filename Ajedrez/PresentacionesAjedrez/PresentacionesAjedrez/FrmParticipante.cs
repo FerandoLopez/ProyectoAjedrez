@@ -35,6 +35,7 @@ namespace PresentacionesAjedrez
             p._Direccion = "";
             p._Campeonato = "";
             p._Telefono = "";
+            p._Rol = "";
             p._FkIdPais = 0;
             FrmAddParticipante ape = new FrmAddParticipante();
             ape.Dock = DockStyle.Fill;
@@ -50,7 +51,8 @@ namespace PresentacionesAjedrez
             p._Direccion = dtgParticipantes.Rows[i].Cells[2].Value.ToString();
             p._Campeonato = dtgParticipantes.Rows[i].Cells[3].Value.ToString();
             p._Telefono = dtgParticipantes.Rows[i].Cells[4].Value.ToString();
-            p._FkIdPais = int.Parse(dtgParticipantes.Rows[i].Cells[5].Value.ToString());
+            p._Rol = dtgParticipantes.Rows[i].Cells[5].Value.ToString();
+            p._FkIdPais = int.Parse(dtgParticipantes.Rows[i].Cells[6].Value.ToString());
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

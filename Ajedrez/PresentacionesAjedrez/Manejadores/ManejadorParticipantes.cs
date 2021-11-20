@@ -14,8 +14,8 @@ namespace Manejadores
         Conexion c = new Conexion("localhost", "ajedrez", "ajedrez", "ajedrez");
         public string Guardar(Participantes participante)
         {
-            return c.Comando(string.Format("call p_insertarparticipante(null,'{0}','{1}','{2}','{3}','{4}')", 
-                participante._Nombre,participante._Direccion,participante._Campeonato, participante._Telefono,participante._FkIdPais));
+            return c.Comando(string.Format("call p_insertarparticipante(null,'{0}','{1}','{2}','{3}','{4}','{5}')", 
+                participante._Nombre,participante._Direccion,participante._Campeonato, participante._Telefono,participante._Rol,participante._FkIdPais));
         }
 
         public void Mostrar(DataGridView tabla, string dato)
@@ -26,8 +26,8 @@ namespace Manejadores
 
         public string Modificar(Participantes participante)
         {
-            return c.Comando(string.Format("call p_modificarparticipante('{0}','{1}','{2}','{3}','{4}','{5}')",
-                participante._IdParticipante,participante._Nombre, participante._Direccion,  participante._Campeonato, participante._Telefono,participante._FkIdPais));
+            return c.Comando(string.Format("call p_modificarparticipante('{0}','{1}','{2}','{3}','{4}','{5}','{6}')",
+                participante._IdParticipante,participante._Nombre, participante._Direccion,  participante._Campeonato, participante._Telefono,participante._Rol,participante._FkIdPais));
         }
 
         public string Eliminar(Participantes participante)

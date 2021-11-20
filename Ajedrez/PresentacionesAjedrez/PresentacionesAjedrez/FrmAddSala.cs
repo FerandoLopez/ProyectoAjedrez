@@ -44,6 +44,7 @@ namespace PresentacionesAjedrez
                 MessageBox.Show(ms.Modificar(new Sala(FrmSala.s._IdSala, txtMedios.Text, int.Parse(txtCapacidad.Text), cbHotel.SelectedValue.ToString())));
             }
             Close();
+            
         }
 
         private void FrmAddSala_Load(object sender, EventArgs e)

@@ -38,6 +38,7 @@ namespace PresentacionesAjedrez
             FrmAddSala fas = new FrmAddSala();
             fas.Dock = DockStyle.Fill;
             fas.ShowDialog();
+            Actualizar();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

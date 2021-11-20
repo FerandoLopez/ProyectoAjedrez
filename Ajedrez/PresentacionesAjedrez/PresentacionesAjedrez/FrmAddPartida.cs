@@ -15,6 +15,8 @@ namespace PresentacionesAjedrez
     public partial class FrmAddPartida : Form
     {
         ManejadorPartida mp;
+        string color = "";
+        string color2 = "";
         public FrmAddPartida()
         {
             InitializeComponent();
@@ -23,11 +25,11 @@ namespace PresentacionesAjedrez
             {
                 txtFecha.Text = FrmPartida.p._Fecha;
                 cbJugador1.Text = FrmPartida.p._Jugador1;
-                txtColor.Text = FrmPartida.p._ColorJugador1;
+                color = FrmPartida.p._ColorJugador1;
                 cbJugador2.Text = FrmPartida.p._ColorJugador2;
-                txtColor2.Text = FrmPartida.p._ColorJugador2;
+                color2 = FrmPartida.p._ColorJugador2;
                 cbArbitro.Text = FrmPartida.p._Arbitro;
-                txtSala.Text = FrmPartida.p._IdSala.ToString();
+                cbSala.Text = FrmPartida.p._IdSala.ToString();
                 txtEntradas.Text = FrmPartida.p._Entradas.ToString();
             }
         }
@@ -39,6 +41,7 @@ namespace PresentacionesAjedrez
 
         private void FrmAddPartida_Load(object sender, EventArgs e)
         {
+
             var listaj = mp.LlenarJugador();
             cbJugador1.DataSource = listaj;
             cbJugador1.ValueMember = "_idjugador";
@@ -54,23 +57,54 @@ namespace PresentacionesAjedrez
             cbArbitro.ValueMember = "_idarbitro";
             cbArbitro.DisplayMember = "_idarbitro";
 
+            var listas = mp.LlenarSala();
+            cbSala.DataSource = listas;
+            cbSala.ValueMember = "_idsala";
+            cbSala.DisplayMember = "_idsala";
+
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             if (FrmPartida.p._IdPartida == 0)
             {
-                MessageBox.Show(mp.Guardar(new Partida(FrmPartida.p._IdPartida,txtFecha.Text,cbJugador1.SelectedValue.ToString(),txtColor.Text,
-                    cbJugador2.SelectedValue.ToString(),txtColor2.Text,cbArbitro.SelectedValue.ToString(),int.Parse(txtSala.Text),
+
+                if (rbNegras.Checked)
+                {
+                    rbNegras2.Visible = false;
+                    color = "Negras";
+
+                }
+
+                else if (rbBlancas.Checked)
+                {
+                    rbBlancas2.Checked = false;
+                    color = "Blancas";
+                }
+
+                if (rbNegras2.Checked)
+                {
+                    rbNegras.Checked = false;
+                    color2 = "Negras";
+                
+                }
+                else if (rbBlancas2.Checked)
+                {
+                    rbBlancas.Checked = false;
+                    color2 = "Blancas";
+                }
+
+                MessageBox.Show(mp.Guardar(new Partida(FrmPartida.p._IdPartida,txtFecha.Text,cbJugador1.SelectedValue.ToString(),color,
+                    cbJugador2.SelectedValue.ToString(),color2,cbArbitro.SelectedValue.ToString(),int.Parse(cbSala.SelectedValue.ToString()),
                     int.Parse(txtEntradas.Text.ToString()))));
                 Close();
             }
             else
             {
-                MessageBox.Show(mp.Modificar(new Partida(FrmPartida.p._IdPartida, txtFecha.Text, cbJugador1.SelectedValue.ToString(), txtColor.Text,
-                    cbJugador2.SelectedValue.ToString(), txtColor2.Text, cbArbitro.SelectedValue.ToString(), int.Parse(txtSala.Text),
+                MessageBox.Show(mp.Modificar(new Partida(FrmPartida.p._IdPartida, txtFecha.Text, cbJugador1.SelectedValue.ToString(), color,
+                    cbJugador2.SelectedValue.ToString(), color2, cbArbitro.SelectedValue.ToString(), int.Parse(cbSala.SelectedValue.ToString()),
                     int.Parse(txtEntradas.Text.ToString()))));
-        
+
             }
             Close();
         }

@@ -41,7 +41,7 @@ namespace Manejadores
 
         public List<ComboParticipante> LlenarParticipante()
         {
-            return c.LlenarParticipante("select idparticipante, nombre from participante");
+            return c.LlenarParticipante("select idparticipante, nombre from participante where rol = 'Arbitro'");
         }
     }
 }

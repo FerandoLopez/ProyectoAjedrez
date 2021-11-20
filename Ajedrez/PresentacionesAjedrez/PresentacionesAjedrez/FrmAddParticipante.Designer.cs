@@ -44,6 +44,9 @@ namespace PresentacionesAjedrez
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.rbJugador = new System.Windows.Forms.RadioButton();
+            this.rbArbitro = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -115,7 +118,7 @@ namespace PresentacionesAjedrez
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
             this.btnCancelar.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_cancel_2;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(357, 449);
+            this.btnCancelar.Location = new System.Drawing.Point(357, 496);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(135, 47);
@@ -131,7 +134,7 @@ namespace PresentacionesAjedrez
             this.btnGuardar.ForeColor = System.Drawing.Color.Black;
             this.btnGuardar.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_save_close;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(209, 449);
+            this.btnGuardar.Location = new System.Drawing.Point(209, 496);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(137, 47);
@@ -165,7 +168,7 @@ namespace PresentacionesAjedrez
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(47, 377);
+            this.label7.Location = new System.Drawing.Point(47, 424);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 29);
             this.label7.TabIndex = 40;
@@ -175,7 +178,7 @@ namespace PresentacionesAjedrez
             // 
             this.cbPais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPais.FormattingEnabled = true;
-            this.cbPais.Location = new System.Drawing.Point(223, 377);
+            this.cbPais.Location = new System.Drawing.Point(223, 424);
             this.cbPais.Margin = new System.Windows.Forms.Padding(4);
             this.cbPais.Name = "cbPais";
             this.cbPais.Size = new System.Drawing.Size(269, 33);
@@ -214,11 +217,49 @@ namespace PresentacionesAjedrez
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(47, 374);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 29);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "Rol";
+            // 
+            // rbJugador
+            // 
+            this.rbJugador.AutoSize = true;
+            this.rbJugador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbJugador.Location = new System.Drawing.Point(223, 374);
+            this.rbJugador.Name = "rbJugador";
+            this.rbJugador.Size = new System.Drawing.Size(112, 29);
+            this.rbJugador.TabIndex = 45;
+            this.rbJugador.TabStop = true;
+            this.rbJugador.Text = "Jugador";
+            this.rbJugador.UseVisualStyleBackColor = true;
+            // 
+            // rbArbitro
+            // 
+            this.rbArbitro.AutoSize = true;
+            this.rbArbitro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbArbitro.Location = new System.Drawing.Point(382, 374);
+            this.rbArbitro.Name = "rbArbitro";
+            this.rbArbitro.Size = new System.Drawing.Size(97, 29);
+            this.rbArbitro.TabIndex = 46;
+            this.rbArbitro.TabStop = true;
+            this.rbArbitro.Text = "Arbitro";
+            this.rbArbitro.UseVisualStyleBackColor = true;
+            // 
             // FrmAddParticipante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(521, 507);
+            this.ClientSize = new System.Drawing.Size(521, 554);
+            this.Controls.Add(this.rbArbitro);
+            this.Controls.Add(this.rbJugador);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.cbPais);
             this.Controls.Add(this.label7);
@@ -262,5 +303,8 @@ namespace PresentacionesAjedrez
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.RadioButton rbJugador;
+        private System.Windows.Forms.RadioButton rbArbitro;
     }
 }

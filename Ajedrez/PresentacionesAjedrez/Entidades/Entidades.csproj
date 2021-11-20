@@ -48,6 +48,7 @@
     <Compile Include="ComboJugador.cs" />
     <Compile Include="ComboPais.cs" />
     <Compile Include="ComboParticipante.cs" />
+    <Compile Include="ComboPartida.cs" />
     <Compile Include="ComboSala.cs" />
     <Compile Include="Hotel.cs" />
     <Compile Include="Jugador.cs" />

@@ -37,14 +37,25 @@ namespace PresentacionesAjedrez
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            string rol = "";
+            if (rbJugador.Checked)
+            {
+                rol = "Jugador";
+
+            }
+            else if (rbArbitro.Checked)
+            {
+                rol = "Arbitro";
+            }
+
             if (FrmParticipante.p._IdParticipante == 0)
                 {
-                    MessageBox.Show(mp.Guardar(new Participantes(FrmParticipante.p._IdParticipante,txtNombre.Text,txtDireccion.Text,txtCampeonato.Text,txtTelefono.Text,int.Parse(cbPais.SelectedValue.ToString()))));
+                    MessageBox.Show(mp.Guardar(new Participantes(FrmParticipante.p._IdParticipante,txtNombre.Text,txtDireccion.Text,txtCampeonato.Text,txtTelefono.Text, rol,int.Parse(cbPais.SelectedValue.ToString()))));
                     Close();
                 }
                 else
                 {
-                    MessageBox.Show(mp.Modificar(new Participantes(FrmParticipante.p._IdParticipante, txtNombre.Text, txtDireccion.Text, txtCampeonato.Text, txtTelefono.Text, int.Parse(cbPais.SelectedValue.ToString()))));
+                    MessageBox.Show(mp.Modificar(new Participantes(FrmParticipante.p._IdParticipante, txtNombre.Text, txtDireccion.Text, txtCampeonato.Text, txtTelefono.Text,rol, int.Parse(cbPais.SelectedValue.ToString()))));
             }
                 Close();
             }

@@ -41,5 +41,11 @@ namespace Manejadores
             }
             return r;
         }
+
+        public List<ComboPartida> LlenarPartida()
+
+        {
+            return c.LlenarPartida("select idpartida from partida");
+        }
     }
 }

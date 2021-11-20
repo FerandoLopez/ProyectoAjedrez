@@ -241,5 +241,34 @@ namespace AccesoDatos
             }
         }
 
+
+        public List<ComboPartida> LlenarPartida(string consulta)
+        {
+            List<ComboPartida> lista = new List<ComboPartida>();
+
+            try
+            {
+                con.Open();
+                var command = new MySqlCommand(consulta, con);
+                var reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        ComboPartida cp = new ComboPartida();
+                        cp._IdPartida = int.Parse(reader["idpartida"].ToString());
+                        lista.Add(cp);
+                    }
+                }
+                con.Close();
+                return lista;
+            }
+            catch (Exception)
+            {
+                con.Close();
+                return lista;
+            }
+        }
+
     }
 }

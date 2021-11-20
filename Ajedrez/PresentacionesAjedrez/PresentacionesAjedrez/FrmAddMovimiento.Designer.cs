@@ -38,10 +38,10 @@ namespace PresentacionesAjedrez
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtPartida = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cbPartida = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -149,15 +149,6 @@ namespace PresentacionesAjedrez
             this.label5.TabIndex = 36;
             this.label5.Text = "Partida";
             // 
-            // txtPartida
-            // 
-            this.txtPartida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPartida.Location = new System.Drawing.Point(192, 136);
-            this.txtPartida.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPartida.Name = "txtPartida";
-            this.txtPartida.Size = new System.Drawing.Size(269, 30);
-            this.txtPartida.TabIndex = 37;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
@@ -191,13 +182,22 @@ namespace PresentacionesAjedrez
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
+            // cbPartida
+            // 
+            this.cbPartida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPartida.FormattingEnabled = true;
+            this.cbPartida.Location = new System.Drawing.Point(192, 136);
+            this.cbPartida.Name = "cbPartida";
+            this.cbPartida.Size = new System.Drawing.Size(269, 33);
+            this.cbPartida.TabIndex = 39;
+            // 
             // FrmAddMovimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(508, 416);
+            this.Controls.Add(this.cbPartida);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtPartida);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtComentario);
             this.Controls.Add(this.label4);
@@ -211,6 +211,7 @@ namespace PresentacionesAjedrez
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAddMovimiento";
             this.Text = "FrmAddMovimiento";
+            this.Load += new System.EventHandler(this.FrmAddMovimiento_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -230,9 +231,9 @@ namespace PresentacionesAjedrez
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtPartida;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox cbPartida;
     }
 }

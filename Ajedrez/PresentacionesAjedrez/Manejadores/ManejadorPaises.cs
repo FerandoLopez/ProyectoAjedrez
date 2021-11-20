@@ -14,7 +14,7 @@ namespace Manejadores
         Conexion c = new Conexion("localhost", "ajedrez", "ajedrez", "ajedrez");
         public string Guardar(Paises pais)
         {
-            return c.Comando(string.Format("call p_insertarpais(null,'{0}','{1}','{2}')",pais._Nombre,pais._NoClubes,pais._FkIdPais));
+            return c.Comando(string.Format("call p_insertarpais(null,'{0}','{1}')",pais._Nombre,pais._NoClubes));
         }
 
         public void Mostrar(DataGridView tabla, string dato)
@@ -25,7 +25,7 @@ namespace Manejadores
 
         public string Modificar(Paises pais)
         {
-           return c.Comando(string.Format("call p_modificarpais('{0}','{1}','{2}','{3}')", pais._IdPais, pais._Nombre, pais._NoClubes,pais._FkIdPais));
+           return c.Comando(string.Format("call p_modificarpais('{0}','{1}','{2}')", pais._IdPais, pais._Nombre, pais._NoClubes));
         }
 
         public string Eliminar(Paises pais)
