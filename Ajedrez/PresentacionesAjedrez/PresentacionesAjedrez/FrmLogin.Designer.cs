@@ -32,6 +32,7 @@ namespace PresentacionesAjedrez
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -41,7 +42,6 @@ namespace PresentacionesAjedrez
             this.txtUser = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -87,6 +87,21 @@ namespace PresentacionesAjedrez
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(439, 441);
             this.panel1.TabIndex = 7;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.White;
+            this.btnSalir.DialogResult = System.Windows.Forms.DialogResult.Retry;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.Black;
+            this.btnSalir.Location = new System.Drawing.Point(230, 344);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(150, 39);
+            this.btnSalir.TabIndex = 6;
+            this.btnSalir.Text = "Cerrar";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // pictureBox3
             // 
@@ -140,7 +155,7 @@ namespace PresentacionesAjedrez
             this.btnIngresar.Location = new System.Drawing.Point(42, 344);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(150, 39);
-            this.btnIngresar.TabIndex = 3;
+            this.btnIngresar.TabIndex = 5;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = false;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
@@ -151,7 +166,7 @@ namespace PresentacionesAjedrez
             this.txtPassword.Location = new System.Drawing.Point(42, 275);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(367, 29);
-            this.txtPassword.TabIndex = 2;
+            this.txtPassword.TabIndex = 4;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtUser
@@ -160,7 +175,7 @@ namespace PresentacionesAjedrez
             this.txtUser.Location = new System.Drawing.Point(42, 176);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(367, 29);
-            this.txtUser.TabIndex = 1;
+            this.txtUser.TabIndex = 3;
             // 
             // label1
             // 
@@ -183,21 +198,6 @@ namespace PresentacionesAjedrez
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.White;
-            this.btnSalir.DialogResult = System.Windows.Forms.DialogResult.Retry;
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.ForeColor = System.Drawing.Color.Black;
-            this.btnSalir.Location = new System.Drawing.Point(230, 344);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(150, 39);
-            this.btnSalir.TabIndex = 8;
-            this.btnSalir.Text = "Cerrar";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -209,7 +209,7 @@ namespace PresentacionesAjedrez
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmLogin";
             this.Text = "FrmLogin";
             this.panel1.ResumeLayout(false);

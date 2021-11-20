@@ -52,7 +52,7 @@ namespace PresentacionesAjedrez
             this.btnEliminar.Location = new System.Drawing.Point(456, 519);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(150, 39);
-            this.btnEliminar.TabIndex = 23;
+            this.btnEliminar.TabIndex = 3;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -68,7 +68,7 @@ namespace PresentacionesAjedrez
             this.btnAgregar.Location = new System.Drawing.Point(300, 519);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(150, 39);
-            this.btnAgregar.TabIndex = 22;
+            this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -112,7 +112,7 @@ namespace PresentacionesAjedrez
             this.txtBuscarPaises.Location = new System.Drawing.Point(88, 202);
             this.txtBuscarPaises.Name = "txtBuscarPaises";
             this.txtBuscarPaises.Size = new System.Drawing.Size(519, 29);
-            this.txtBuscarPaises.TabIndex = 21;
+            this.txtBuscarPaises.TabIndex = 1;
             this.txtBuscarPaises.TextChanged += new System.EventHandler(this.txtBuscarPaises_TextChanged);
             // 
             // panel1
@@ -121,7 +121,7 @@ namespace PresentacionesAjedrez
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(616, 179);
             this.panel1.TabIndex = 28;
@@ -152,7 +152,7 @@ namespace PresentacionesAjedrez
             this.Controls.Add(this.dtgPaises);
             this.Controls.Add(this.txtBuscarPaises);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmPais";
             this.Text = "frmPais";
             this.Load += new System.EventHandler(this.FrmPais_Load);

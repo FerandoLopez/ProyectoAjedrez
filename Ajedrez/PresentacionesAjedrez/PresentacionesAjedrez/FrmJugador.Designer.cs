@@ -47,7 +47,7 @@ namespace PresentacionesAjedrez
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(623, 179);
             this.panel1.TabIndex = 52;
@@ -76,7 +76,7 @@ namespace PresentacionesAjedrez
             this.btnEliminar.Location = new System.Drawing.Point(455, 555);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(150, 39);
-            this.btnEliminar.TabIndex = 49;
+            this.btnEliminar.TabIndex = 3;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -92,7 +92,7 @@ namespace PresentacionesAjedrez
             this.btnAgregar.Location = new System.Drawing.Point(299, 555);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(150, 39);
-            this.btnAgregar.TabIndex = 48;
+            this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -136,7 +136,7 @@ namespace PresentacionesAjedrez
             this.txtBuscarJugadores.Location = new System.Drawing.Point(86, 225);
             this.txtBuscarJugadores.Name = "txtBuscarJugadores";
             this.txtBuscarJugadores.Size = new System.Drawing.Size(519, 29);
-            this.txtBuscarJugadores.TabIndex = 47;
+            this.txtBuscarJugadores.TabIndex = 1;
             this.txtBuscarJugadores.TextChanged += new System.EventHandler(this.txtBuscarJugadores_TextChanged);
             // 
             // FrmJugador
@@ -151,7 +151,7 @@ namespace PresentacionesAjedrez
             this.Controls.Add(this.dtgJugadores);
             this.Controls.Add(this.txtBuscarJugadores);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmJugador";
             this.Text = "FrmJugador";
             this.Load += new System.EventHandler(this.FrmJugador_Load);

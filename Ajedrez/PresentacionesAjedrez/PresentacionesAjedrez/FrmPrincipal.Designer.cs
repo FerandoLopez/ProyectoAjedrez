@@ -54,10 +54,9 @@ namespace PresentacionesAjedrez
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::PresentacionesAjedrez.Properties.Resources.Black_and_White_Chess_Pattern_generated;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 54);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(0, 45);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(271, 786);
+            this.panel1.Size = new System.Drawing.Size(203, 564);
             this.panel1.TabIndex = 0;
             // 
             // menuStrip1
@@ -71,8 +70,9 @@ namespace PresentacionesAjedrez
             this.btnSalir});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1136, 54);
-            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(852, 45);
+            this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // paisToolStripMenuItem
@@ -84,7 +84,7 @@ namespace PresentacionesAjedrez
             this.paisToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.paisToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.paisToolStripMenuItem.Name = "paisToolStripMenuItem";
-            this.paisToolStripMenuItem.Size = new System.Drawing.Size(97, 50);
+            this.paisToolStripMenuItem.Size = new System.Drawing.Size(80, 41);
             this.paisToolStripMenuItem.Text = "Pais";
             // 
             // btnPais
@@ -94,7 +94,7 @@ namespace PresentacionesAjedrez
             this.btnPais.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_country_80px;
             this.btnPais.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnPais.Name = "btnPais";
-            this.btnPais.Size = new System.Drawing.Size(351, 86);
+            this.btnPais.Size = new System.Drawing.Size(302, 86);
             this.btnPais.Text = "Pais";
             this.btnPais.Click += new System.EventHandler(this.btnPais_Click_2);
             // 
@@ -105,7 +105,7 @@ namespace PresentacionesAjedrez
             this.btnRepresenta.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_ubicación_en_todo_el_mundo_48;
             this.btnRepresenta.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnRepresenta.Name = "btnRepresenta";
-            this.btnRepresenta.Size = new System.Drawing.Size(351, 86);
+            this.btnRepresenta.Size = new System.Drawing.Size(302, 86);
             this.btnRepresenta.Text = "Representa";
             this.btnRepresenta.Click += new System.EventHandler(this.btnRepresenta_Click);
             // 
@@ -119,7 +119,7 @@ namespace PresentacionesAjedrez
             this.participantesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.participantesToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.participantesToolStripMenuItem.Name = "participantesToolStripMenuItem";
-            this.participantesToolStripMenuItem.Size = new System.Drawing.Size(242, 50);
+            this.participantesToolStripMenuItem.Size = new System.Drawing.Size(198, 41);
             this.participantesToolStripMenuItem.Text = "Participantes";
             // 
             // btnParticipante
@@ -129,7 +129,7 @@ namespace PresentacionesAjedrez
             this.btnParticipante.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_users_48px;
             this.btnParticipante.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnParticipante.Name = "btnParticipante";
-            this.btnParticipante.Size = new System.Drawing.Size(367, 86);
+            this.btnParticipante.Size = new System.Drawing.Size(315, 86);
             this.btnParticipante.Text = "Participante";
             this.btnParticipante.Click += new System.EventHandler(this.btnParticipante_Click_1);
             // 
@@ -140,7 +140,7 @@ namespace PresentacionesAjedrez
             this.btnJugador.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_jugador_48;
             this.btnJugador.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnJugador.Name = "btnJugador";
-            this.btnJugador.Size = new System.Drawing.Size(367, 86);
+            this.btnJugador.Size = new System.Drawing.Size(315, 86);
             this.btnJugador.Text = "Jugador";
             this.btnJugador.Click += new System.EventHandler(this.btnJugador_Click_1);
             // 
@@ -151,7 +151,7 @@ namespace PresentacionesAjedrez
             this.btnArbitro.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_árbitro_80;
             this.btnArbitro.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnArbitro.Name = "btnArbitro";
-            this.btnArbitro.Size = new System.Drawing.Size(367, 86);
+            this.btnArbitro.Size = new System.Drawing.Size(315, 86);
             this.btnArbitro.Text = "Arbitro";
             this.btnArbitro.Click += new System.EventHandler(this.btnArbitro_Click_1);
             // 
@@ -165,7 +165,7 @@ namespace PresentacionesAjedrez
             this.hotelToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.hotelToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.hotelToolStripMenuItem.Name = "hotelToolStripMenuItem";
-            this.hotelToolStripMenuItem.Size = new System.Drawing.Size(122, 50);
+            this.hotelToolStripMenuItem.Size = new System.Drawing.Size(101, 41);
             this.hotelToolStripMenuItem.Text = "Hotel";
             // 
             // btnHotel
@@ -175,7 +175,7 @@ namespace PresentacionesAjedrez
             this.btnHotel.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_hotel_96px;
             this.btnHotel.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnHotel.Name = "btnHotel";
-            this.btnHotel.Size = new System.Drawing.Size(300, 102);
+            this.btnHotel.Size = new System.Drawing.Size(260, 102);
             this.btnHotel.Text = "Hotel";
             this.btnHotel.Click += new System.EventHandler(this.btnHotel_Click_1);
             // 
@@ -186,7 +186,7 @@ namespace PresentacionesAjedrez
             this.btnAloja.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_note_64px;
             this.btnAloja.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnAloja.Name = "btnAloja";
-            this.btnAloja.Size = new System.Drawing.Size(300, 102);
+            this.btnAloja.Size = new System.Drawing.Size(260, 102);
             this.btnAloja.Text = "Aloja";
             this.btnAloja.Click += new System.EventHandler(this.btnAloja_Click);
             // 
@@ -201,7 +201,7 @@ namespace PresentacionesAjedrez
             this.salasToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.salasToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.salasToolStripMenuItem.Name = "salasToolStripMenuItem";
-            this.salasToolStripMenuItem.Size = new System.Drawing.Size(114, 50);
+            this.salasToolStripMenuItem.Size = new System.Drawing.Size(94, 41);
             this.salasToolStripMenuItem.Text = "Salas";
             // 
             // btnSalas
@@ -211,7 +211,7 @@ namespace PresentacionesAjedrez
             this.btnSalas.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_room_64;
             this.btnSalas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnSalas.Name = "btnSalas";
-            this.btnSalas.Size = new System.Drawing.Size(354, 70);
+            this.btnSalas.Size = new System.Drawing.Size(300, 70);
             this.btnSalas.Text = "Salas";
             this.btnSalas.Click += new System.EventHandler(this.btnSalas_Click_1);
             // 
@@ -222,7 +222,7 @@ namespace PresentacionesAjedrez
             this.btnPartidas.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_head_to_head_48px;
             this.btnPartidas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnPartidas.Name = "btnPartidas";
-            this.btnPartidas.Size = new System.Drawing.Size(354, 70);
+            this.btnPartidas.Size = new System.Drawing.Size(300, 70);
             this.btnPartidas.Text = "Partidas";
             this.btnPartidas.Click += new System.EventHandler(this.btnPartidas_Click_1);
             // 
@@ -233,7 +233,7 @@ namespace PresentacionesAjedrez
             this.btnMovimiento.Image = global::PresentacionesAjedrez.Properties.Resources.icons8_move_32px;
             this.btnMovimiento.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnMovimiento.Name = "btnMovimiento";
-            this.btnMovimiento.Size = new System.Drawing.Size(354, 70);
+            this.btnMovimiento.Size = new System.Drawing.Size(300, 70);
             this.btnMovimiento.Text = "Movimiento";
             this.btnMovimiento.Click += new System.EventHandler(this.btnMovimiento_Click_1);
             // 
@@ -243,22 +243,21 @@ namespace PresentacionesAjedrez
             this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.Black;
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(105, 50);
+            this.btnSalir.Size = new System.Drawing.Size(86, 41);
             this.btnSalir.Text = "Salir";
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click_1);
             // 
             // FrmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1136, 840);
+            this.ClientSize = new System.Drawing.Size(852, 609);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.Color.Black;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.menuStrip1.ResumeLayout(false);

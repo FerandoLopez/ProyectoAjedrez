@@ -47,9 +47,9 @@ namespace PresentacionesAjedrez
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(821, 220);
+            this.panel1.Size = new System.Drawing.Size(616, 179);
             this.panel1.TabIndex = 52;
             // 
             // label2
@@ -58,9 +58,10 @@ namespace PresentacionesAjedrez
             this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 37.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(180, 66);
+            this.label2.Location = new System.Drawing.Point(135, 54);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(454, 72);
+            this.label2.Size = new System.Drawing.Size(374, 59);
             this.label2.TabIndex = 0;
             this.label2.Text = "S   A   L   A   S";
             // 
@@ -72,11 +73,10 @@ namespace PresentacionesAjedrez
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(605, 681);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Location = new System.Drawing.Point(454, 553);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(200, 48);
-            this.btnEliminar.TabIndex = 49;
+            this.btnEliminar.Size = new System.Drawing.Size(150, 39);
+            this.btnEliminar.TabIndex = 3;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -89,11 +89,10 @@ namespace PresentacionesAjedrez
             this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(397, 681);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Location = new System.Drawing.Point(298, 553);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(200, 48);
-            this.btnAgregar.TabIndex = 48;
+            this.btnAgregar.Size = new System.Drawing.Size(150, 39);
+            this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -103,10 +102,9 @@ namespace PresentacionesAjedrez
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(32, 283);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(24, 230);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 28);
+            this.label1.Size = new System.Drawing.Size(60, 21);
             this.label1.TabIndex = 51;
             this.label1.Text = "Buscar";
             // 
@@ -123,12 +121,11 @@ namespace PresentacionesAjedrez
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgSalas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgSalas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgSalas.Location = new System.Drawing.Point(36, 343);
-            this.dtgSalas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtgSalas.Location = new System.Drawing.Point(27, 279);
             this.dtgSalas.Name = "dtgSalas";
             this.dtgSalas.ReadOnly = true;
             this.dtgSalas.RowHeadersWidth = 51;
-            this.dtgSalas.Size = new System.Drawing.Size(769, 316);
+            this.dtgSalas.Size = new System.Drawing.Size(577, 257);
             this.dtgSalas.TabIndex = 50;
             this.dtgSalas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgSalas_CellDoubleClick);
             this.dtgSalas.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgSalas_CellEnter);
@@ -136,19 +133,18 @@ namespace PresentacionesAjedrez
             // txtBuscarSala
             // 
             this.txtBuscarSala.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarSala.Location = new System.Drawing.Point(115, 277);
-            this.txtBuscarSala.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscarSala.Location = new System.Drawing.Point(86, 225);
             this.txtBuscarSala.Name = "txtBuscarSala";
-            this.txtBuscarSala.Size = new System.Drawing.Size(691, 34);
-            this.txtBuscarSala.TabIndex = 47;
+            this.txtBuscarSala.Size = new System.Drawing.Size(519, 29);
+            this.txtBuscarSala.TabIndex = 1;
             this.txtBuscarSala.TextChanged += new System.EventHandler(this.txtBuscarSala_TextChanged);
             // 
             // FrmSala
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(821, 734);
+            this.ClientSize = new System.Drawing.Size(616, 596);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
@@ -156,7 +152,7 @@ namespace PresentacionesAjedrez
             this.Controls.Add(this.dtgSalas);
             this.Controls.Add(this.txtBuscarSala);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmSala";
             this.Text = "FrmSala";
             this.Load += new System.EventHandler(this.FrmSala_Load);
